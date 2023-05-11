@@ -1,0 +1,43 @@
+.main-heard{
+    height: 100vh;
+}
+.img-right{
+    background-image: url("../../assets/media/img-8.png");
+    background-size: 650px;
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-position: top;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text-color{
+    color: #4fa2c3;
+}
+.bg-color{
+    background-color: #4fa2c3;
+}
+
+.bg-img-1{
+    background-image: url("../../assets/media/img-7.png");
+    background-size: 600px;
+    background-repeat: no-repeat;
+    height: 60vh;
+    background-position-y: -69px;
+}
+
+.accordion >.card{
+    border-radius: 15px!important;
+}
+
+.accordion .btn{
+    border-left: 3px solid #4fa2c3;
+    border-radius: 0px;
+}
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(255 255 255 / 0%)!important;
+}

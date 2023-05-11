@@ -6,20 +6,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Tableau de bord</title>
+    <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <section class="main-heard">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="assets/media/kofre.png" class="img-fluid" width="150" alt="logo"></a>
+          </div>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mx-md-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Bussiness</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">A propos-de nous</a>
+              </li>
+            </ul>
+            <div>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">S'inscrit</button>
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Se connecter</button>
+            </div>
+          </div>
+        </nav>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div>
+              <h1 class="display-4 font-weight-light"><span class="font-weight-bold text-color">Optimisez</span> votre entreprise avec notre plateforme de gestion <span class="font-weight-bold text-color">tout-en-un.</span></h1>
+              <p><strong>Kofre</strong> est une plateforme de gestion tout-en-un qui vous offre des fonctionnalités intégrées pour gérer votre entreprise plus efficacement. De la gestion des ressources humaines à la comptabilité en passant par la planification de projet et la collaboration d'équipe...</p>
+            </div>
+          </div>
+          <div class="col-md-6 img-right"></div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <section class="bg-light">
+      <div class="container">
+        <h4 class="text-center text-uppercase p-md-3 text-color font-weight-bold">
+          Des fonctionnalités complètes <br>pour répondre 
+          à tous vos besoins <br>  de gestion d'entreprise
+        </h4>
+        <div class="row">
+          <div class="col-md-6 bg-img-1"></div>
+          <div class="col-md-6">
+            <p class="py-md-5">Notre plateforme de gestion tout-en-un est équipée d'une gamme complète de fonctionnalités pour vous aider à gérer tous les aspects de votre entreprise. De la planification de projet à la gestion des stocks, en passant par la facturation et la gestion des RH, notre plateforme offre une solution centralisée pour répondre à tous vos besoins. Vous pouvez également personnaliser les fonctionnalités pour vous assurer que notre plateforme répond aux exigences spécifiques de votre entreprise. Simplifiez votre travail quotidien et économisez du temps et des efforts en optant pour notre solution de gestion tout-en-un.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h4 class="text-center text-uppercase p-md-3 text-color font-weight-bold">Nos fonctionnalités</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="accordion" id="accordionExample">
+              <div class="card shadow mb-4 border-0">
+                <div class="card-header bg-white border-0" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left text-color font-weight-bold text-uppercase" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Annuaire en ligne
+                    </button>
+                  </h2>
+                </div>
+            
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body">
+                    La fonctionnalité annuaire en ligne permet aux entreprises de répertorier leurs informations de contact et de localisation dans une liste centralisée accessible au public.
+                    Vous peuvez ainsi utiliser cette fonctionnalité pour améliorer votre visibilité en ligne et pour aider les clients à trouver facilement les informations dont ils ont besoin.
+                  </div>
+                </div>
+              </div>
+              <div class="card shadow mb-4 border-0">
+                <div class="card-header bg-white border-0" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left collapsed text-color font-weight-bold text-uppercase" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Comptabilité
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    La fonctionnalité comptabilité est un ensemble d'outils qui permettent aux entreprises de gérer leurs finances de manière efficace.
+                    Elle comprend généralement des fonctionnalités de comptabilité générale telles que: la facturation, la gestion des budgets, ...
+                  </div>
+                </div>
+              </div>
+              <div class="card shadow mb-4 border-0">
+                <div class="card-header bg-white border-0" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left collapsed text-color font-weight-bold text-uppercase" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      La gestion de stocks
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    La fonctionnalité de gestion de stock permet aux entreprises de gérer leurs stocks de manière efficace. 
+                    Elle permet de suivre les niveaux de stocks, de gérer les commandes et les approvisionnements, de surveiller les mouvements de stocks, d'analyser les tendances de la demande et de prévoir les besoins futurs.                  </div>
+                </div>
+              </div>
+              <div class="card shadow mb-4 border-0">
+                <div class="card-header bg-white border-0" id="headingFour">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left collapsed text-color font-weight-bold text-uppercase" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      La gestion de projet
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    La fonctionnalité de gestion de projet permet aux entreprises de gérer efficacement leurs projets. 
+                    Elle offre une vue d'ensemble de l'état d'avancement du projet, permet de définir des objectifs, 
+                    des échéances et des tâches pour chaque membre de l'équipe, ainsi que de suivre les progrès réalisés.                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 bg-img-1"></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 bg-img-1"></div>
+          <div class="col-md-6">
+            <div class="accordion" id="accordion-2">
+              <div class="card shadow mb-4 border-0">
+                <div class="card-header bg-white border-0" id="headingFive">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left collapsed text-color font-weight-bold text-uppercase" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      Chat
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion-2">
+                  <div class="card-body">
+                    La fonctionnalité chat permet aux entreprises de communiquer avec leur équipe en temps réel. 
+                    Cette fonctionnalité peut également inclure un système de messagerie instantanée pour faciliter la communication entre les membres de l'équipe,...
+                  </div>
+                </div>
+              </div>
+              <div class="card shadow mb-4 border-0">
+                <div class="card-header bg-white border-0" id="headingSix">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left collapsed text-color font-weight-bold text-uppercase" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      Agendas
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion-2">
+                  <div class="card-body">
+                    La fonctionnalité agendas permet aux entreprises de planifier, d'organiser et de gérer les horaires et les rendez-vous de manière efficace.
+                    Elle permet de suivre les disponibilités et les absences des employés, de programmer des rendez-vous et des réunions, de planifier des événements et de fixer des échéances.
+                  </div>
+                </div>
+              </div>
+              <div class="card shadow mb-4 border-0">
+                <div class="card-header bg-white border-0" id="headingSeven">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left collapsed text-color font-weight-bold text-uppercase" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                     équipe
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion-2">
+                  <div class="card-body">
+                    La fonctionnalité Equipe permet aux entreprises de gérer efficacement leur équipe et leur personnel. 
+                    Elle permet de créer des profils pour chaque employé, de suivre leur temps de travail, de gérer leurs tâches et leurs projets, de suivre leurs absences et de gérer leur paie et leurs avantages sociaux.
+                  </div>
+                </div>
+              </div>
+              <div class="card shadow mb-4 border-0">
+                <div class="card-header bg-white border-0" id="headingHeigth">
+                  <h2 class="mb-0">
+                    <button class="btn btn-block text-left collapsed text-color font-weight-bold text-uppercase" type="button" data-toggle="collapse" data-target="#collapseHeigth" aria-expanded="false" aria-controls="collapseHeigth">
+                      Message
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseHeigth" class="collapse" aria-labelledby="headingHeigth" data-parent="#accordion-2">
+                  <div class="card-body">
+                    La fonctionnalité Message permet aux entreprises de communiquer avec leurs clients de manière efficace et professionnelle.                 
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h4 class="text-center text-uppercase p-md-3 text-color font-weight-bold">A qui s'addresse KOFRE?</h4>
+        <div class="row">
+          <div class="row row-cols-1 row-cols-md-4">
+            <div class="col mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">PME</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">PMI</h5>
+                  <p class="card-text">This is a short card.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">START-UP</h5>
+                  <p class="card-text">Elles peuvent fournir des outils de gestion pour aider à suivre les finances, la facturation, la gestion de projet et les tâches administratives.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">AUTRE</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
