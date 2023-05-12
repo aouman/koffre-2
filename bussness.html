@@ -7,12 +7,15 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
 
     <title>Hello, world!</title>
   </head>
@@ -24,7 +27,7 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#"><img src="assets/media/kofre.png" class="img-fluid" width="150" alt="logo"></a>
+            <a class="navbar-brand" href="#"><img src="assets/media/kofre.png" class="img-fluid logo" width="150" alt="logo"></a>
           </div>
           
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,15 +44,15 @@
               </li>
             </ul>
             <div>
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">S'inscrit</button>
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Se connecter</button>
+              <a href="login-register/register.html" class="btn btn-outline-success my-2 my-sm-0"> S'inscrit</a>
+              <a href="login-register/login.html" class="btn btn-outline-success my-2 my-sm-0">Se connecter</a>
             </div>
           </div>
         </nav>
-        <div class="row mt-5">
+        <div class="row mt-md-5">
           <div class="col-md-6">
             <div>
-              <h1 class="display-4 font-weight-light"><span class="font-weight-bold text-color">Optimisez</span> votre entreprise avec notre plateforme de gestion <span class="font-weight-bold text-color">tout-en-un.</span></h1>
+              <h1 class="main-title h1 font-weight-light"><span class="font-weight-bold text-color">Optimisez</span> votre entreprise avec notre plateforme de gestion <span class="font-weight-bold text-color">tout-en-un.</span></h1>
               <p><strong>Kofre</strong> est une plateforme de gestion tout-en-un qui vous offre des fonctionnalités intégrées pour gérer votre entreprise plus efficacement. De la gestion des ressources humaines à la comptabilité en passant par la planification de projet et la collaboration d'équipe...</p>
             </div>
           </div>
@@ -60,7 +63,7 @@
 
     <section class="bg-light">
       <div class="container">
-        <h4 class="text-center text-uppercase p-md-3 text-color font-weight-bold">
+        <h4 class="text-center text-uppercase py-md-5 py-4 text-color font-weight-bold">
           Des fonctionnalités complètes <br>pour répondre 
           à tous vos besoins <br>  de gestion d'entreprise
         </h4>
@@ -73,9 +76,9 @@
       </div>
     </section>
 
-    <section>
+    <section class="pb-md-3">
       <div class="container">
-        <h4 class="text-center text-uppercase p-md-3 text-color font-weight-bold">Nos fonctionnalités</h4>
+        <h4 class="text-center text-uppercase py-4 py-md-5 text-color font-weight-bold">Nos fonctionnalités</h4>
         <div class="row">
           <div class="col-md-6">
             <div class="accordion" id="accordionExample">
@@ -142,10 +145,10 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 bg-img-1"></div>
+          <div class="col-md-6 bg-img-2"></div>
         </div>
         <div class="row">
-          <div class="col-md-6 bg-img-1"></div>
+          <div class="col-md-6 bg-img-3"></div>
           <div class="col-md-6">
             <div class="accordion" id="accordion-2">
               <div class="card shadow mb-4 border-0">
@@ -212,46 +215,111 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="bg-light pb-md-4 pb-4">
       <div class="container">
-        <h4 class="text-center text-uppercase p-md-3 text-color font-weight-bold">A qui s'addresse KOFRE?</h4>
-        <div class="row">
+        <h4 class="text-center text-uppercase text-color font-weight-bold py-4 py-md-5">A qui s'addresse KOFRE?</h4>
+        <div class="row-who mb-md-3">
           <div class="row row-cols-1 row-cols-md-4">
             <div class="col mb-3">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">PME</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="card h-100 border-0 bg-light">
+                <div class="card-body border-r shadow bg-light text-center">
+                  <img src="assets/media/who-1.png" class="img-fluid" alt="">
+                  <h5 class="card-title pt-md-4">PME</h5>
                 </div>
               </div>
             </div>
             <div class="col mb-3">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">PMI</h5>
-                  <p class="card-text">This is a short card.</p>
+              <div class="card h-100 border-0 bg-light">
+                <div class="card-body border-r shadow bg-light text-center">
+                  <img src="assets/media/who-2.png" class="img-fluid" alt="">
+                  <h5 class="card-title pt-md-4">PMI</h5>
                 </div>
               </div>
             </div>
             <div class="col mb-3">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">START-UP</h5>
-                  <p class="card-text">Elles peuvent fournir des outils de gestion pour aider à suivre les finances, la facturation, la gestion de projet et les tâches administratives.</p>
+              <div class="card h-100 border-0 bg-light">
+                <div class="card-body border-r shadow bg-light text-center">
+                  <img src="assets/media/who-3.png" class="img-fluid" alt="">
+                  <h5 class="card-title pt-md-4">START-UP</h5>
                 </div>
               </div>
             </div>
             <div class="col mb-3">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">AUTRE</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="card h-100 border-0 bg-light">
+                <div class="card-body border-r shadow bg-light text-center">
+                  <img src="assets/media/who-4.png" class="img-fluid" alt="">
+                  <h5 class="card-title pt-md-4">AUTRE</h5>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="row-contact my-md-3 bg-color border-r">
+          <h4 class="text-center text-uppercase pt-md-4 text-white font-weight-bold">Contacter-nous</h4>
+          <p class="text-center px-md-4 p-3 text-white">Vous etes une entreprise, une start-up etc, vous voulez une solution adapter a votre besoin? Contacter-nous pour avoir un lien de connexion.</p>
+          <div class="row">
+            <div class="col-md-6">
+              <img src="assets/media/img-10.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+              <form class="p-md-5 p-4">
+                <div class="form-group">
+                  <input type="text" class="form-control form-control-lg border-r" placeholder="Nom de l'entreprise" aria-describedby="textHelp">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control form-control-lg border-r" placeholder="Adresse Email" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control form-control-lg" placeholder="Description" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn border border-white rounded-pill text-white shadow-sm">Contacter-nous</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
+    <section class="bg-color">
+      <footer class="container pt-3">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="assets/media/kofre.png" width="100" class="img-fluid" alt="">
+            
+            <ul class="list-group">
+              <li class="list-group-item d-flex align-items-center border-0 bg-color text-white">
+                <span class="pr-4"><i class="bi bi-telephone"></i></span>
+                +225 0576815563
+              </li>
+              <li class="list-group-item d-flex align-items-center border-0 bg-color text-white">
+                <span class="pr-4"><i class="bi bi-envelope"></i></span>
+                kofr@gmail.com
+              </li>
+              <li class="list-group-item d-flex align-items-center border-0 bg-color text-white">
+                <span class="pr-4"><i class="bi bi-geo-alt-fill"></i></span>
+                Koumassi remblais
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-group">
+              <li class="list-group-item text-uppercase font-weight-bold border-0 text-white bg-color disabled" aria-disabled="true">En savoir plus</li>
+              <li class="list-group-item border-0 bg-color"><a href="" class="text-white">A propos</a> </li>
+              <li class="list-group-item border-0 bg-color"><a href="" class="text-white">CGU</a></li>
+              <li class="list-group-item border-0 bg-color"><a href="" class="text-white">Politique de confidentialité</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-group">
+              <li class="list-group-item text-uppercase text-white font-weight-bold border-0 bg-color disabled" aria-disabled="true">Nos Reseaux</li>
+              <li class="list-group-item border-0 bg-color"><a href=""  class="text-white"><i class="bi bi-linkedin"></i> Linkedin</a></li>
+              <li class="list-group-item border-0 bg-color"><a href=""  class="text-white"><i class="bi bi-facebook"></i> Facebook</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center py-3 border-top text-white">
+            © Copyrights <strong span="" id="year">2021</strong> . Kofre. All Rights Reserved
+        </div>
+      </footer>
     </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -266,5 +334,11 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
     -->
+    <!--COPYRIGTH SCRIPT-->
+      <script type="text/javascript">
+        var date = new Date();
+        var annee = date.getFullYear();
+        document.getElementById('year').innerHTML = annee;
+      </script>
   </body>
 </html>

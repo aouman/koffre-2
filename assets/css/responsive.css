@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px) {
+    .logo{
+        margin-left: 1.5rem!important;
+    }
+    .main-title{
+        text-transform: uppercase;
+        font-size: 40px;
+        padding-bottom: 3rem!important;
+    }
+    .img-right{
+        display: none;
+    }
+    .bg-img-1, 
+    .bg-img-2, 
+    .bg-img-3{
+        background-size: 400px;
+        background-repeat: no-repeat;
+        height: 35vh;
+        background-position-y: initial;
+    }
+
+  }
