@@ -6,20 +6,301 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../../assets/css/master.css">
+    <link rel="stylesheet" href="../../assets/css/responsive.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
     <title>Tableau de bord</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <section class="main-dash-1 sidebar close">
+      <div class="">
+        <div class="logo-details bg-white">
+          <img src="../../assets/media/kofre.png" class="img-fluid logo" width="130" alt="logo">
+          <!--span class="logo_name">
+            <a href="#"><img src="../../assets/media/kofre.png" class="img-fluid logo" width="150" alt="logo"></a> 
+          </span-->
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#" class="act-show">
+              <i class='bx bx-tachometer'></i>
+              <span class="link_name">Accueil</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Accueil</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-info-circle'></i>
+              <span class="link_name">informations</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">informations</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bxs-bank'></i>
+              <span class="link_name">Comptabilité</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Comptabilité</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-clipboard'></i>
+              <span class="link_name">Stock</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Stock</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-list-check'></i>
+              <span class="link_name">Mes taches</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Mes taches</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-chat'></i>
+              <span class="link_name">Chat</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Chat</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-calendar'></i>
+              <span class="link_name">Agendas</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Agendas</a></li>
+            </ul>
+          </li>  
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-user-plus'></i>
+              <span class="link_name">Mon équipe</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Mon équipe</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-message-detail'></i>
+              <span class="link_name">Message</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Message</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-credit-card'></i>
+              <span class="link_name">Abonnement</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Abonnement</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-cog' ></i>
+              <span class="link_name">Paramètre</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Paramètre</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
+    <section class="home-section bg-white">
+      <div class="home-content badge d-flex justify-content-between align-items-center">
+        <div class="heard-225 d-flex justify-content-between align-items-center ">
+          <i class='bx bx-menu' ></i>
+          <span class="text d-md-block d-none"> 
+            <p class="mb-0 d-flex justify-content-between align-items-center">
+              <i class='bx bx-tachometer pr-3'></i>
+             Accueil
+            </p>
+          </span>
+        </div>
+        <div class="elment-menu">
+          <ul class="nav justify-content-end">
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2 active" href="#">
+                <i class='bx bx-help-circle h4 mb-0'></i>
+              </a>
+            </li>
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2" href="#">
+                <i class='bx bx-bell h4 mb-0'></i>
+              </a>
+            </li>
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                <i class='bx bx-user h4 mb-0'></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 pt-md-5 pt-5 mt-3 my-md-5">
+            <div class="card-container-dash d-md-flex flex-wrap justify-content-between align-content-center">
+              <div class="card border-0 bg-transparent">
+                <div class="card-body card-225">
+                  <a href="#">
+                    <div class="card-content-225">
+                      <div class="text-zone"></div>
+                      <div class="content-rad-225">
+                        <p><i class='bx bx-message-detail'></i></p>
+                        <h4 class="h6">Mes messages</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 bg-transparent">
+                <div class="card-body card-225">
+                  <a href="#">
+                    <div class="card-content-225">
+                      <div class="text-zone"></div>
+                      <div class="content-rad-225">
+                        <p><i class='bx bx-calendar'></i></p>
+                        <h4 class="h6">Mon Agendas</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 bg-transparent">
+                <div class="card-body card-225">
+                  <a href="#">
+                    <div class="card-content-225">
+                      <div class="text-zone"></div>
+                      <div class="content-rad-225">
+                        <p><i class='bx bx-list-check'></i></p>
+                        <h4 class="h6">Mes Taches</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="card border-0 bg-transparent">
+                <div class="card-body card-225">
+                  <a href="#">
+                    <div class="card-content-225">
+                      <div class="text-zone"></div>
+                      <div class="content-rad-225">
+                        <p><i class='bx bx-chat'></i></p>
+                        <h4 class="h6">Mes Chats</h4>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <h4 class="text-center mb-4">MES COLABORATEURS
+            </h4>
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered table-hover table-responsive-lg">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nom et Prénoms</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Téléphone</th>
+                    <th scope="col">Role</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Arsene KOUASSI</td>
+                    <td>k2.aouman@gmail.com</td>
+                    <td>0576815563</td>
+                    <td>Comptable</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>@fat</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+      let arrow = document.querySelectorAll(".arrow");
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e)=>{
+       let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+       arrowParent.classList.toggle("showMenu");
+        });
+      }
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".bx-menu");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("close");
+      });
+      </script>
   </body>
 </html>

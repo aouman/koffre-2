@@ -6,20 +6,461 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../../assets/css/master.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- quill editor -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="//cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
 
     <title>Tableau de bord</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <section class="main-dash-1 sidebar close">
+      <div class="">
+        <div class="logo-details bg-white">
+          <img src="../../assets/media/kofre.png" class="img-fluid logo" width="130" alt="logo">
+          <!--span class="logo_name">
+            <a href="#"><img src="../../assets/media/kofre.png" class="img-fluid logo" width="150" alt="logo"></a> 
+          </span-->
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#">
+              <i class='bx bx-tachometer'></i>
+              <span class="link_name">Accueil</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Accueil</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="act-show">
+              <i class='bx bx-info-circle'></i>
+              <span class="link_name">informations</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">informations</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bxs-bank'></i>
+              <span class="link_name">Comptabilité</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Comptabilité</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-clipboard'></i>
+              <span class="link_name">Stock</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Stock</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-list-check'></i>
+              <span class="link_name">Mes taches</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Mes taches</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-chat'></i>
+              <span class="link_name">Chat</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Chat</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-calendar'></i>
+              <span class="link_name">Agendas</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Agendas</a></li>
+            </ul>
+          </li>  
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-user-plus'></i>
+              <span class="link_name">Mon équipe</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Mon équipe</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-message-detail'></i>
+              <span class="link_name">Message</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Message</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-credit-card'></i>
+              <span class="link_name">Abonnement</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Abonnement</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-cog' ></i>
+              <span class="link_name">Paramètre</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Paramètre</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
+  <!--END MENU-->
+  
+    <section class="home-section bg-white">
+      <div class="home-content badge d-flex justify-content-between align-items-center">
+        <div class="heard-225 d-flex justify-content-between align-items-center ">
+          <i class='bx bx-menu' ></i>
+          <span class="text d-md-block d-none"> 
+            <p class="mb-0 d-flex justify-content-between align-items-center">
+              <i class='bx bx-tachometer pr-3'></i>
+             Accueil
+            </p>
+          </span>
+        </div>
+        <div class="elment-menu">
+          <ul class="nav justify-content-end">
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2 active" href="#">
+                <i class='bx bx-help-circle h4 mb-0'></i>
+              </a>
+            </li>
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2" href="#">
+                <i class='bx bx-bell h4 mb-0'></i>
+              </a>
+            </li>
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                <i class='bx bx-user h4 mb-0'></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+          </ul>
+        </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+              <div class="pt-md-5 pt-5 mt-3 my-md-5">
+                <div class="row">
+                  <div class="col-md-3 tab-head-125">
+                    <div class="nav flex-column nav-pills border-r p-md-4 shadow " id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                      <button class="nav-link text-left font-weight-bold rounded-pill btn-shadow text-dark shadow border my-md-3 py-2 p-2 active" id="v-pills-text-tab" data-toggle="pill" data-target="#v-pills-text" type="button" role="tab" aria-controls="v-pills-text" aria-selected="true">Text</button>
+                      <button class="nav-link text-left font-weight-bold rounded-pill btn-shadow text-dark shadow border my-md-3 py-2 p-2" id="v-pills-media-tab" data-toggle="pill" data-target="#v-pills-media" type="button" role="tab" aria-controls="v-pills-media" aria-selected="false">Médias</button>
+                      <button class="nav-link text-left font-weight-bold rounded-pill btn-shadow text-dark shadow border my-md-3 py-2 p-2" id="v-pills-service-tab" data-toggle="pill" data-target="#v-pills-service" type="button" role="tab" aria-controls="v-pills-service" aria-selected="false">Nos Services</button>
+                      <button class="nav-link text-left font-weight-bold rounded-pill btn-shadow text-dark shadow border my-md-3 py-2 p-2" id="v-pills-team-tab" data-toggle="pill" data-target="#v-pills-team" type="button" role="tab" aria-controls="v-pills-team" aria-selected="false">Notre équipe</button>
+                      <button class="nav-link text-left font-weight-bold rounded-pill btn-shadow text-dark shadow border my-md-3 py-2 p-2" id="v-pills-localisation-tab" data-toggle="pill" data-target="#v-pills-localisation" type="button" role="tab" aria-controls="v-pills-localisation" aria-selected="false">Localisation</button>
+                      <button class="nav-link text-left font-weight-bold rounded-pill btn-shadow text-dark shadow border my-md-3 py-2 p-2" id="v-pills-cordonne-tab" data-toggle="pill" data-target="#v-pills-cordonne" type="button" role="tab" aria-controls="v-pills-cordonne" aria-selected="false">Nos cordonnées</button>
+                    </div>
+                  </div>
+                  <div class="col-md-9 infos-contente">
+                    <div class="tab-content" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-text" role="tabpanel" aria-labelledby="v-pills-text-tab">
+                        <div class="d-md-flex flex-wrap justify-content-between align-items-center">
+                          <div class="card border-0">
+                            <div class="card-body">
+                              <form>
+                                <button type="submit" class="btn bg-color text-white mb-3 py-md-2 px-md-3 rounded-pill font-weight-bold shadow">Ajouter un titre d'Accueil</button>
+                                <div class="form-group">
+                                  <input type="text" class="form-control" aria-describedby="textHelp">
+                                </div>
+                                
+                              </form>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <form>
+                                <div class="form-group">
+                                  <label for="exampleFormControlFile1">Ajouter une image d'accueil</label>
+                                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-content-555">
+                          <h6 class="my-md-3 my-2 p-3 text-uppercase">Ajouter une description de votre entreprise</h6>
+                          <!-- Create the editor container -->
+                          <div id="editor">
+                            <p>Hello World!</p>
+                            <p>Some initial <strong>bold</strong> text</p>
+                            <p><br></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-media" role="tabpanel" aria-labelledby="v-pills-media-tab">
+                        <div class="card border-0">
+                          <div class="card-body">
+                            <form>
+                              <div class="upload__box">
+                                <div class="upload__btn-box">
+                                  <label class="upload__btn p-md-2 shadow ">
+                                    <p>Clicquer Ajouter des images</p>
+                                    <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                  </label>
+                                </div>
+                                <div class="upload__img-wrap"></div>
+                              </div>
+                              <div class="text-center">
+                                <button type="submit" class="btn btn-info border-r px-md-5 ">Ajouter</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-service" role="tabpanel" aria-labelledby="v-pills-service-tab">
+                        <div class="card">
+                          <div class="card-body">
+                            <form>
+                              <div id="req_input">
+                                <div class="form-group row" >
+                                  <div class="col-md-6">
+                                    <input type="text" class="form-control form-control-lg mb-2" placeholder="Nos services">
+                                  </div>
+                                  <label for="staticEmail" class="col-md-6 col-form-label"></label>
+                                </div>
+  
+                              </div>
+                              <div class="py-md-3 py-1">
+                                <button type="button" id="addmore" class="add_input btn btn-shadow mr-md-5 font-weight-bold p-md-3 p-2">Ajouter un service</button>
+                                <button type="submit" class="btn bg-color font-weight-bold text-white p-md-3 p-2">Enregistrer</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-team" role="tabpanel" aria-labelledby="v-pills-team-tab">
+                        <div class="card">
+                          <div class="card-body">
+                            <form>
+                              <div id="req_input_2">
+                                <div class="form-group row" >
+                                  <div class="col-md-4">
+                                    <input type="file" class="form-control form-control-lg mb-2">
+                                  </div>
+                                  <div class="col-md-4">
+                                    <input type="text" class="form-control form-control-lg mb-2" placeholder="Nom et Prenoms">
+                                  </div>
+                                  <div class="col-md-4">
+                                    <input type="text" class="form-control form-control-lg mb-2" placeholder="Role">
+                                  </div>
+                                </div>
+  
+                              </div>
+                              <div class="py-md-3 py-1">
+                                <button type="button" id="addmore_2" class="add_input_2 btn btn-shadow mr-md-5 font-weight-bold p-md-3 p-2">Ajouter un service</button>
+                                <button type="submit" class="btn bg-color font-weight-bold text-white p-md-3 p-2">Enregistrer</button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-localisation" role="tabpanel" aria-labelledby="v-pills-localisation-tab">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15888.406928391025!2d-3.956033!3d5.4014698!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc194a609b71af7%3A0x9074829bdd8ec591!2sCINETPAY!5e0!3m2!1sfr!2sci!4v1684278322105!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-cordonne" role="tabpanel" aria-labelledby="v-pills-cordonne-tab">
+                        6-contacte
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script>
+      let arrow = document.querySelectorAll(".arrow");
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e)=>{
+       let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+       arrowParent.classList.toggle("showMenu");
+        });
+      }
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".bx-menu");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("close");
+      });
+      </script>
+
+      <!-- Include the Quill library -->
+      <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+      <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
+
+      <!-- Initialize Quill editor -->
+      <script>
+        var quill = new Quill('#editor', {
+          theme: 'snow'
+        });
+      </script>
+
+      <script>
+        jQuery(document).ready(function () {
+            ImgUpload();
+          });
+
+          function ImgUpload() {
+            var imgWrap = "";
+            var imgArray = [];
+
+            $('.upload__inputfile').each(function () {
+              $(this).on('change', function (e) {
+                imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
+                var maxLength = $(this).attr('data-max_length');
+
+                var files = e.target.files;
+                var filesArr = Array.prototype.slice.call(files);
+                var iterator = 0;
+                filesArr.forEach(function (f, index) {
+
+                  if (!f.type.match('image.*')) {
+                    return;
+                  }
+
+                  if (imgArray.length > maxLength) {
+                    return false
+                  } else {
+                    var len = 0;
+                    for (var i = 0; i < imgArray.length; i++) {
+                      if (imgArray[i] !== undefined) {
+                        len++;
+                      }
+                    }
+                    if (len > maxLength) {
+                      return false;
+                    } else {
+                      imgArray.push(f);
+
+                      var reader = new FileReader();
+                      reader.onload = function (e) {
+                        var html = "<div class='upload__img-box'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
+                        imgWrap.append(html);
+                        iterator++;
+                      }
+                      reader.readAsDataURL(f);
+                    }
+                  }
+                });
+              });
+            });
+
+            $('body').on('click', ".upload__img-close", function (e) {
+              var file = $(this).parent().data("file");
+              for (var i = 0; i < imgArray.length; i++) {
+                if (imgArray[i].name === file) {
+                  imgArray.splice(i, 1);
+                  break;
+                }
+              }
+              $(this).parent().parent().remove();
+            });
+          }
+      </script>
+
+      <!--Ajouter un service-->
+
+      <script>
+        $(document).ready(function() {
+          $("#addmore").click(function() {
+            $("#req_input").append(
+              '<div class="">'+
+                    '<div class="form-group row required_inp">'+
+                      '<div class="col-md-6">'+
+                        '<input type="text" class="form-control form-control-lg mb-2" placeholder="Nos services">'+
+                      '</div>'+
+                        '<button type="button" id="addmore" class="inputRemove btn btn-shadow text-danger font-weight-bold">'+
+                          '<i class="bx bx-trash p-md-1"></i>'+
+                        '</button>'+
+                    '</div>'+
+                '</div>'  
+                );
+          });
+          $('body').on('click','.inputRemove',function() {
+            $(this).parent('div.required_inp').remove()
+          });
+        });
+      </script>
+      <!--Ajouter une equipe-->
+      <script>
+        $(document).ready(function() {
+          $("#addmore_2").click(function() {
+            $("#req_input_2").append(
+                    '<div class="form-group row required_inp_2">'+
+                      '<div class="col-md-4">'+
+                        '<input type="file" class="form-control form-control-lg mb-2">'+
+                      '</div>'+
+                      '<div class="col-md-4">'+
+                        '<input type="text" class="form-control form-control-lg mb-2" placeholder="Nom et Prénoms">'+
+                      '</div>'+
+                      '<div class="col-md-3">'+
+                        '<input type="text" class="form-control form-control-lg mb-2" placeholder="Role">'+
+                      '</div>'+
+                        '<button type="button" id="addmore" class="inputRemove btn btn-shadow text-danger font-weight-bold">'+
+                          '<i class="bx bx-trash p-md-1"></i>'+
+                        '</button>'+
+                    '</div>'
+                );
+          });
+          $('body').on('click','.inputRemove_2',function() {
+            $(this).parent('div.required_inp_2').remove()
+          });
+        });
+      </script>
   </body>
 </html>
