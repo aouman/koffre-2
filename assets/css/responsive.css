@@ -19,4 +19,28 @@
         background-position-y: initial;
     }
 
+    .logo-details .logo{
+        margin-left: 0px!important;
+    }
+
+    .tab-head-125 div button{
+        margin-top: 1rem!important;
+        margin-bottom: 1rem!important;
+    }
+
+    .infos-contente {
+        height: initial;
+        margin: 1rem 0;
+    }
+
+    .upload__btn {
+        font-size: 14px;
+    }
+
+    .upload__img-wrap {
+        margin: 10px;
+    }
+    #contact-select-cordonnee input{
+        width: 85px;
+    }
   }
