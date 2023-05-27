@@ -43,7 +43,7 @@
             </ul>
           </li>
           <li>
-            <a href="info.html" class="act-show">
+            <a href="info.html">
               <i class='bx bx-info-circle'></i>
               <span class="link_name">informations</span>
             </a>
@@ -52,7 +52,7 @@
             </ul>
           </li>
           <li>
-            <a href="comptabilite.html">
+            <a href="comptabilite.html" class="act-show">
               <i class='bx bxs-bank'></i>
               <span class="link_name">Comptabilité</span>
             </a>
@@ -186,7 +186,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-              <div class="pt-4">
+              <div class="pt-md-5 pt-5 mt-3 my-md-5">
                 <div class="row">
                   <div class="col-md-3 tab-head-125">
                     <div class="nav flex-column nav-pills border-r p-md-4 p-2 shadow " id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -302,6 +302,7 @@
                         </div>
                       </div>
                       <div class="tab-pane fade" id="v-pills-localisation" role="tabpanel" aria-labelledby="v-pills-localisation-tab">
+
                         <div class="card">
                           <div class="card-body">
                             <form>
@@ -309,12 +310,14 @@
                                 <input type="url" class="form-control form-control-lg" placeholder="Votre lien google maps">
                               </div>
                               <div class="form-group">
-                                <textarea class="form-control form-control-lg" rows="3" placeholder="Cordonnées Géographique"></textarea>
+                                <textarea class="form-control form-control-lg" rows="3" placeholder="Votre description de votre lieu"></textarea>
                               </div>
                               <button type="submit" class="btn btn-info border-r px-md-5 ">Enregistrer</button>
                             </form>
                           </div>
                         </div>
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15888.406928391025!2d-3.956033!3d5.4014698!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc194a609b71af7%3A0x9074829bdd8ec591!2sCINETPAY!5e0!3m2!1sfr!2sci!4v1684278322105!5m2!1sfr!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                       </div>
                       <div class="tab-pane fade" id="v-pills-cordonne" role="tabpanel" aria-labelledby="v-pills-cordonne-tab">
                         <div class="card border-0">
@@ -323,14 +326,13 @@
                               <div id="req_input_3">
                                 <div class="form-group row contack" >
                                   <div class="col-md-5">
-                                    <div class="shadow badge rounded-pill p-md-2 my-4 my-md-0 position-fixed" id="contact-select-cordonnee">
+                                    <div class="shadow badge rounded-pill p-md-2 my-4 my-md-0" id="contact-select-cordonnee">
                                       <select class="custom_select shadow rounded-pill">
                                         <option selected value="default">Selectionner un contact</option>
                                         <option value="Cells">Cells</option>
                                         <option value="Tels">Tels</option>
                                         <option value="Fax">Fax</option>
                                         <option value="Email">Email</option>
-                                        <option value="Web">Web</option>
                                       </select>
                                       <input class="border-0 p-2" placeholder="Choisir"></input>
                                     </div>
@@ -340,253 +342,12 @@
                                 </div>
                               </div>
 
-                              <div class="py-md-3 py-1 pt-5 mt-5 mt-md-5 pt-md-5">
-                                <button type="submit" class="btn bg-color font-weight-bold text-white mb-md-0 mb-3 p-md-3 p-2">Enregistrer</button>
-                                <button type="button" id="addmore_3" class="add_input_2 btn btn-shadow mr-md-5 font-weight-bold p-md-3 p-2" data-toggle="modal" data-target="#staticShowBackdrop">Aperçu de vos infos</button>
+                              <div class="py-md-3 py-1">
+                                <!--button type="button" id="addmore_3" class="add_input_2 btn btn-shadow mr-md-5 font-weight-bold p-md-3 p-2">Ajouter un contact</button-->
+                                <button type="submit" class="btn bg-color font-weight-bold text-white p-md-3 p-2">Enregistrer</button>
                               </div>
                              
                             </form>
-
-                            
-                            <!-- Modal Apercus-->
-            
-                            <!-- Modal -->
-                            <div class="modal fade" id="staticShowBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticShowBackdropLabel" aria-hidden="true">
-                              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable  modal-xl">
-                                <div class="modal-content">
-                                  <div class="modal-header">
-                                    <h5 class="modal-title" id="staticShowBackdropLabel">Aperçu</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body">
-                                    <div class="container-fluid">
-                                      <div class="row">
-                                        <div class="col-12">
-                                          <div class="title-infos text-center text-uppercase font-weight-bold mains-img position-absolute w-100">
-                                            <h3>SMC Société</h3>
-                                          </div>
-                                          <div class="logo-vignette position-absolute bg-white border-r shadow border d-flex justify-content-center align-items-center p-2">
-                                            <img src="../../assets/media/kofre.png" class="img-fluid" alt="logo">
-                                          </div>
-                                          <div class="bg-color-first"></div>
-                                        </div>
-                                      </div>
-                                      <div class="row py-5 mt-3">
-                                        <div class="col-md-6">
-                                          <h4 class="text-uppercase py-4 p-3 text-color font-weight-bold">A propos de nous</h4>
-                                          <p class="p-3">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat mollitia vitae voluptatibus porro numquam sapiente et sequi, nihil laboriosam quibusdam! Laboriosam deserunt odit saepe minima quo ad ex illum debitis.
-                                          </p>
-                                        </div>
-                                        <div class="col-md-6">
-                                          <div class="imgEditShow"></div>
-                                        </div>
-                                      </div>
-                                      <div class="row">
-                                        <div class="col-md-12">
-                                          <section class="gallery-block grid-gallery">
-                                            <div class="container">
-                                              <div class="mb-3">
-                                                <h4 class="text-uppercase py-4 p-3 text-color font-weight-bold text-center">Nos savoir faire</h4>
-                                              </div>
-                                              <div class="row">
-                                                <div class="col-md-6 col-lg-4 item">
-                                                  <a class="lightbox" href="http://www.politicalmetaphors.com/wp-content/uploads/2015/04/blog-shapes-square-windows.jpg">
-                                                    <img class="img-fluid image scale-on-hover" src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070505/Gallery/image1.jpg">
-                                                  </a>
-                                                </div>
-                                                <div class="col-md-6 col-lg-4 item">
-                                                  <a class="lightbox" href="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070507/Gallery/image2.jpg">
-                                                    <img class="img-fluid image scale-on-hover" src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070507/Gallery/image2.jpg">
-                                                  </a>
-                                                </div>
-                                                <div class="col-md-6 col-lg-4 item">
-                                                  <a class="lightbox" href="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070506/Gallery/image3.jpg">
-                                                    <img class="img-fluid image scale-on-hover" src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070506/Gallery/image3.jpg">
-                                                  </a>
-                                                </div>
-                                                <div class="col-md-6 col-lg-4 item">
-                                                  <a class="lightbox" href="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070505/Gallery/image4.jpg">
-                                                    <img class="img-fluid image scale-on-hover" src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070505/Gallery/image4.jpg">
-                                                  </a>
-                                                </div>
-                                                <div class="col-md-6 col-lg-4 item">
-                                                  <a class="lightbox" href="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070506/Gallery/image5.jpg">
-                                                    <img class="img-fluid image scale-on-hover" src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070506/Gallery/image5.jpg">
-                                                  </a>
-                                                </div>
-                                                <div class="col-md-6 col-lg-4 item">
-                                                  <a class="lightbox" href="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070508/Gallery/image6.jpg">
-                                                    <img class="img-fluid image scale-on-hover" src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070508/Gallery/image6.jpg">
-                                                  </a>
-                                                </div>
-                                                <div class="col-md-6 col-lg-4 item">
-                                                  <a class="lightbox" href="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070509/Gallery/image7.jpg">
-                                                    <img class="img-fluid image scale-on-hover" src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070509/Gallery/image7.jpg">
-                                                  </a>
-                                                </div>
-                                                <div class="col-md-6 col-lg-4 item">
-                                                  <a class="lightbox" href="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070510/Gallery/image8.jpg">
-                                                    <img class="img-fluid image scale-on-hover" src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070510/Gallery/image8.jpg">
-                                                  </a>
-                                                </div>
-                                                <div class="col-md-6 col-lg-4 item">
-                                                  <a class="lightbox" href="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070507/Gallery/image9.jpg">
-                                                    <img class="img-fluid image scale-on-hover" src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070507/Gallery/image9.jpg">
-                                                  </a>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </section>
-                                        </div>
-                                      </div>
-                                      <div class="row bg-light">
-                                        <div class="col-md-12">
-                                          <h4 class="text-uppercase py-4 p-3 text-color font-weight-bold text-center">Nos services</h4>
-                                          <div class="services d-md-flex flex-wrap align-items-center justify-content-between p-md-4">
-                                            <div class="card shadow-sm text-uppercase badge border-r mb-2">
-                                              <div class="card-body">
-                                                Conception web
-                                              </div>
-                                            </div>
-                                            <div class="card shadow-sm text-uppercase badge border-r mb-2">
-                                              <div class="card-body">
-                                                Conception web
-                                              </div>
-                                            </div>
-                                            <div class="card shadow-sm text-uppercase badge border-r mb-2">
-                                              <div class="card-body">
-                                                Conception web
-                                              </div>
-                                            </div>
-                                            <div class="card shadow-sm text-uppercase badge border-r mb-2">
-                                              <div class="card-body">
-                                                Formation
-                                              </div>
-                                            </div>
-                                            <div class="card shadow-sm text-uppercase badge border-r mb-2">
-                                              <div class="card-body">
-                                                Consutance
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="row">
-                                        <div class="col-md-12">
-                                          <h4 class="text-uppercase py-4 p-3 text-color font-weight-bold text-center">Notre equipe</h4>
-                                          <div class="team_s d-flex flex-wrap align-items-center">
-                                            <div class="card p-md-3 mb-3">
-                                              <div class="card-body px-0 py-4 text-center">
-                                                <div class="img_tema_s p-md-3">
-                                                  <img src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070507/Gallery/image9.jpg" class="img-fluid rounded-circle" alt="image">
-                                                </div>
-                                                <h5 class="card-title">KOUASSI Arsene</h5>
-                                                <h6 class="card-subtitle mb-2 text-muted">Develloppeur web</h6>
-                                              </div>
-                                            </div>
-
-                                            <div class="card p-md-3 mb-3">
-                                              <div class="card-body px-0 py-4 text-center">
-                                                <div class="img_tema_s p-md-3">
-                                                  <img src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070507/Gallery/image9.jpg" class="img-fluid rounded-circle" alt="image">
-                                                </div>
-                                                <h5 class="card-title">KOUASSI Arsene</h5>
-                                                <h6 class="card-subtitle mb-2 text-muted">Develloppeur web</h6>
-                                              </div>
-                                            </div>
-                                            <div class="card p-md-3 mb-3">
-                                              <div class="card-body px-0 py-4 text-center">
-                                                <div class="img_tema_s p-md-3">
-                                                  <img src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070507/Gallery/image9.jpg" class="img-fluid rounded-circle" alt="image">
-                                                </div>
-                                                <h5 class="card-title">KOUASSI Arsene</h5>
-                                                <h6 class="card-subtitle mb-2 text-muted">Develloppeur web</h6>
-                                              </div>
-                                            </div>
-                                            <div class="card p-md-3 mb-3">
-                                              <div class="card-body px-0 py-4 text-center">
-                                                <div class="img_tema_s p-md-3">
-                                                  <img src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070507/Gallery/image9.jpg" class="img-fluid rounded-circle" alt="image">
-                                                </div>
-                                                <h5 class="card-title">KOUASSI Arsene</h5>
-                                                <h6 class="card-subtitle mb-2 text-muted">Develloppeur web</h6>
-                                              </div>
-                                            </div>
-                                            <div class="card p-md-3 mb-3">
-                                              <div class="card-body px-0 py-4 text-center">
-                                                <div class="img_tema_s p-md-3">
-                                                  <img src="https://res.cloudinary.com/dpnaptcei/image/upload/v1537070507/Gallery/image9.jpg" class="img-fluid rounded-circle" alt="image">
-                                                </div>
-                                                <h5 class="card-title">KOUASSI Arsene</h5>
-                                                <h6 class="card-subtitle mb-2 text-muted">Develloppeur web</h6>
-                                              </div>
-                                            </div>
-
-                                          </div>
-                                        </div>
-                                      </div>
-                                      <div class="row bg-light p-md-4 p-2">
-                                        <div class="col-sm-6">
-                                          <div class="card bg-light border-0">
-                                            <div class="card-body bg-light map_show">
-                                              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15888.406928391025!2d-3.956033!3d5.4014698!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc194a609b71af7%3A0x9074829bdd8ec591!2sCINETPAY!5e0!3m2!1sfr!2sci!4v1684278322105!5m2!1sfr!2sci" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                            </div>
-                                          </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                          <div class="card bg-light border-0">
-                                            <div class="card-body bg-light">
-                                              <ul class="list-group">
-                                                <li class="list-group-item d-flex border-0 bg-light">
-                                                  <span class="badge"><i class='bx bx-location-plus pr-3 h4 text-color'></i></span>
-                                                  Adjamé 220 logement a coté de la pharmacie d'adjamé.
-                                                </li>
-                                                <li class="list-group-item d-flex border-0 bg-light">
-                                                  <span class="badge"><i class='bx bx-mobile-alt pr-3 h4 text-color'></i></span>
-                                                  <div class="d-block">
-                                                    <p>+225 0576815563</p> 
-                                                    <p>+225 0576815563</p> 
-                                                    <p>+225 0576815563</p> 
-                                                  </div>
-                                                </li>
-                                                <li class="list-group-item d-flex border-0 bg-light">
-                                                  <span class="badge"><i class='bx bx-phone pr-3 h4 text-color'></i></span>
-                                                  <div class="d-block">
-                                                    <p>+225 0576815563</p> 
-                                                    <p>+225 0576815563</p> 
-                                                    <p>+225 0576815563</p> 
-                                                  </div>
-                                                </li>
-                                                <li class="list-group-item d-flex border-0 bg-light">
-                                                  <span class="badge"><i class='bx bx-printer pr-3 h4 text-color'></i></span>
-                                                  <div class="d-block">
-                                                    <p>+225 0576815563</p> 
-                                                    <p>+225 0576815563</p> 
-                                                    <p>+225 0576815563</p> 
-                                                  </div>
-                                                </li>
-                                                <li class="list-group-item d-flex border-0 bg-light">
-                                                  <span class="badge"><i class='bx bx-globe pr-3 h4 text-color'></i></span>
-                                                  <a href="#">krontech.com</a>
-                                                </li>
-                                              </ul>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                      
-                                    </div>
-                                  </div>
-                                  <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
-                                    <button type="button" class="btn btn-shadow font-weight-bold">Publier les infos</button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
                           </div>
                         </div>
                       </div>
@@ -794,7 +555,7 @@
                           '</button>'+
                       '</div>';
             
-            let fax = '<div class="form-group row required_inp_2">'+
+              let fax = '<div class="form-group row required_inp_2">'+
                 '<div class="input-group col-md-10 col">'+
                   '<div class="input-group-prepend">'+
                     '<div class="input-group-text bg-color text-white">'+
@@ -802,20 +563,6 @@
                     '</div>'+
                   '</div>'+
                   '<input type="tel" pattern="[0-9]{10}" value="" maxlength="20" class="form-control form-control-lg" placeholder="FAX">'+
-                '</div>'+
-                  '<button type="button" class="inputRemove_2 col-md-2 col-auto p-1 btn btn-shadow text-danger font-weight-bold">'+
-                    '<i class="bx bx-trash p-md-1"></i>'+
-                  '</button>'+
-              '</div>';
-
-            let web = '<div class="form-group row required_inp_2">'+
-                '<div class="input-group col-md-10 col">'+
-                  '<div class="input-group-prepend">'+
-                    '<div class="input-group-text bg-color text-white">'+
-                      '<i class="bx bx-globe"></i>'+
-                    '</div>'+
-                  '</div>'+
-                  '<input type="url" class="form-control form-control-lg" placeholder="Site Web">'+
                 '</div>'+
                   '<button type="button" class="inputRemove_2 col-md-2 col-auto p-1 btn btn-shadow text-danger font-weight-bold">'+
                     '<i class="bx bx-trash p-md-1"></i>'+
@@ -837,19 +584,11 @@
               else if(selectedOption === "Email") {
                 $(".new_option").append(email);
               }
-              else if(selectedOption === "Web") {
-                $(".new_option").append(web);
-              }
             });
 
             $('body').on('click','.inputRemove_3',function() {
               $(this).parent('div.required_inp_3').remove()
             });
-        });
-    </script>
-    <script>
-      baguetteBox.run('.grid-gallery', {
-          animation: 'slideIn'
         });
     </script>
   </body>
