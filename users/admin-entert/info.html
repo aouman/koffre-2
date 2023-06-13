@@ -52,7 +52,7 @@
             </ul>
           </li>
           <li>
-            <a href="comptabilite.html">
+            <a href="comptabilite/comptabilite.html">
               <i class='bx bxs-bank'></i>
               <span class="link_name">Comptabilité</span>
             </a>
@@ -149,8 +149,8 @@
           <i class='bx bx-menu' ></i>
           <span class="text d-md-block d-none"> 
             <p class="mb-0 d-flex justify-content-between align-items-center">
-              <i class='bx bx-tachometer pr-3'></i>
-             Accueil
+              <i class='bx bx-info-circle pr-3'></i>
+             Informations
             </p>
           </span>
         </div>
@@ -607,21 +607,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script>
-      let arrow = document.querySelectorAll(".arrow");
-      for (var i = 0; i < arrow.length; i++) {
-        arrow[i].addEventListener("click", (e)=>{
-       let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
-       arrowParent.classList.toggle("showMenu");
-        });
-      }
-      let sidebar = document.querySelector(".sidebar");
-      let sidebarBtn = document.querySelector(".bx-menu");
-      console.log(sidebarBtn);
-      sidebarBtn.addEventListener("click", ()=>{
-        sidebar.classList.toggle("close");
-      });
-    </script>
+    <script src="../../assets/js/index.js"></script>
 
     <!-- Include the Quill library -->
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
@@ -632,220 +618,6 @@
       var quill = new Quill('#editor', {
         theme: 'snow'
       });
-    </script>
-
-    <script>
-      jQuery(document).ready(function () {
-          ImgUpload();
-        });
-
-        function ImgUpload() {
-          var imgWrap = "";
-          var imgArray = [];
-
-          $('.upload__inputfile').each(function () {
-            $(this).on('change', function (e) {
-              imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
-              var maxLength = $(this).attr('data-max_length');
-
-              var files = e.target.files;
-              var filesArr = Array.prototype.slice.call(files);
-              var iterator = 0;
-              filesArr.forEach(function (f, index) {
-
-                if (!f.type.match('image.*')) {
-                  return;
-                }
-
-                if (imgArray.length > maxLength) {
-                  return false
-                } else {
-                  var len = 0;
-                  for (var i = 0; i < imgArray.length; i++) {
-                    if (imgArray[i] !== undefined) {
-                      len++;
-                    }
-                  }
-                  if (len > maxLength) {
-                    return false;
-                  } else {
-                    imgArray.push(f);
-
-                    var reader = new FileReader();
-                    reader.onload = function (e) {
-                      var html = "<div class='upload__img-box'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
-                      imgWrap.append(html);
-                      iterator++;
-                    }
-                    reader.readAsDataURL(f);
-                  }
-                }
-              });
-            });
-          });
-
-          $('body').on('click', ".upload__img-close", function (e) {
-            var file = $(this).parent().data("file");
-            for (var i = 0; i < imgArray.length; i++) {
-              if (imgArray[i].name === file) {
-                imgArray.splice(i, 1);
-                break;
-              }
-            }
-            $(this).parent().parent().remove();
-          });
-        }
-    </script>
-
-    <!--Ajouter un service-->
-
-    <script>
-      $(document).ready(function() {
-        $("#addmore").click(function() {
-          $("#req_input").append(
-            '<div class="">'+
-                  '<div class="form-group row required_inp">'+
-                    '<div class="col-md-6 col">'+
-                      '<input type="text" class="form-control form-control-lg mb-2" placeholder="Nos services">'+
-                    '</div>'+
-                      '<button type="button" class="inputRemove btn btn-shadow text-danger font-weight-bold">'+
-                        '<i class="bx bx-trash p-md-1"></i>'+
-                      '</button>'+
-                  '</div>'+
-              '</div>'  
-              );
-        });
-        $('body').on('click','.inputRemove',function() {
-          $(this).parent('div.required_inp').remove()
-        });
-      });
-    </script>
-    <!--Ajouter une equipe-->
-    <script>
-      $(document).ready(function() {
-        $("#addmore_2").click(function() {
-          $("#req_input_2").append(
-                  '<div class="form-group row required_inp_2">'+
-                    '<div class="col-md-4">'+
-                      '<input type="file" class="form-control form-control-lg mb-2">'+
-                    '</div>'+
-                    '<div class="col-md-4">'+
-                      '<input type="text" class="form-control form-control-lg mb-2" placeholder="Nom et Prénoms">'+
-                    '</div>'+
-                    '<div class="col-md-3 col">'+
-                      '<input type="text" class="form-control form-control-lg mb-2" placeholder="Role">'+
-                    '</div>'+
-                      '<button type="button" class="inputRemove_2 btn btn-shadow text-danger font-weight-bold">'+
-                        '<i class="bx bx-trash p-md-1"></i>'+
-                      '</button>'+
-                  '</div>'
-              );
-        });
-        $('body').on('click','.inputRemove_2',function() {
-          $(this).parent('div.required_inp_2').remove()
-        });
-      });
-    </script>
-
-    <!--Ajouter des coerdonnées-->
-    <script>
-        $(document).ready(function(){
-
-          let cell = '<div class="form-group row required_inp_2">'+
-                        '<div class="input-group col-md-10 col">'+
-                          '<div class="input-group-prepend">'+
-                            '<div class="input-group-text bg-color text-white">'+
-                              '<i class="bx bx-mobile-alt"></i>'+
-                            '</div>'+
-                          '</div>'+
-                          '<input type="tel" pattern="[0-9]{10}" value="" maxlength="20" class="form-control form-control-lg" placeholder="Téléphone mobile">'+
-                        '</div>'+
-                          '<button type="button" class="inputRemove_2 col-md-2 col-auto p-1 btn btn-shadow text-danger font-weight-bold">'+
-                            '<i class="bx bx-trash p-md-1"></i>'+
-                          '</button>'+
-                      '</div>';  
-          
-            let email = '<div class="form-group row required_inp_2">'+
-                        '<div class="input-group col-md-10 col">'+
-                          '<div class="input-group-prepend">'+
-                            '<div class="input-group-text bg-color text-white">'+
-                              '<i class="bx bx-envelope"></i>'+
-                            '</div>'+
-                          '</div>'+
-                          '<input type="email" class="form-control form-control-lg" placeholder="Email">'+
-                        '</div>'+
-                          '<button type="button" class="inputRemove_2 col-md-2 col-auto p-1 btn btn-shadow text-danger font-weight-bold">'+
-                            '<i class="bx bx-trash p-md-1"></i>'+
-                          '</button>'+
-                      '</div>';
-
-
-            let tell = '<div class="form-group row required_inp_2">'+
-                        '<div class="input-group col-md-10 col">'+
-                          '<div class="input-group-prepend">'+
-                            '<div class="input-group-text bg-color text-white">'+
-                              '<i class="bx bx-phone"></i>'+
-                            '</div>'+
-                          '</div>'+
-                          '<input type="tel" pattern="[0-9]{10}" value="" maxlength="20" class="form-control form-control-lg" placeholder="Téléphone Fixe">'+
-                        '</div>'+
-                          '<button type="button" class="inputRemove_2 col-md-2 col-auto p-1 btn btn-shadow text-danger font-weight-bold">'+
-                            '<i class="bx bx-trash p-md-1"></i>'+
-                          '</button>'+
-                      '</div>';
-            
-            let fax = '<div class="form-group row required_inp_2">'+
-                '<div class="input-group col-md-10 col">'+
-                  '<div class="input-group-prepend">'+
-                    '<div class="input-group-text bg-color text-white">'+
-                      '<i class="bx bx-printer"></i>'+
-                    '</div>'+
-                  '</div>'+
-                  '<input type="tel" pattern="[0-9]{10}" value="" maxlength="20" class="form-control form-control-lg" placeholder="FAX">'+
-                '</div>'+
-                  '<button type="button" class="inputRemove_2 col-md-2 col-auto p-1 btn btn-shadow text-danger font-weight-bold">'+
-                    '<i class="bx bx-trash p-md-1"></i>'+
-                  '</button>'+
-              '</div>';
-
-            let web = '<div class="form-group row required_inp_2">'+
-                '<div class="input-group col-md-10 col">'+
-                  '<div class="input-group-prepend">'+
-                    '<div class="input-group-text bg-color text-white">'+
-                      '<i class="bx bx-globe"></i>'+
-                    '</div>'+
-                  '</div>'+
-                  '<input type="url" class="form-control form-control-lg" placeholder="Site Web">'+
-                '</div>'+
-                  '<button type="button" class="inputRemove_2 col-md-2 col-auto p-1 btn btn-shadow text-danger font-weight-bold">'+
-                    '<i class="bx bx-trash p-md-1"></i>'+
-                  '</button>'+
-              '</div>';
-
-          $("select.custom_select").change(function(){
-          var selectedOption = $(this).children("option:selected").text();
-          $(this).next("input").val(selectedOption);
-          $(this).val('default');
-
-              if(selectedOption === "Cells") {
-                $(".new_option").append(cell);
-              } else if(selectedOption === "Tels") {
-                $(".new_option").append(tell);
-              } else if(selectedOption === "Fax") {
-                $(".new_option").append(fax);
-              }
-              else if(selectedOption === "Email") {
-                $(".new_option").append(email);
-              }
-              else if(selectedOption === "Web") {
-                $(".new_option").append(web);
-              }
-            });
-
-            $('body').on('click','.inputRemove_3',function() {
-              $(this).parent('div.required_inp_3').remove()
-            });
-        });
     </script>
     <script>
       baguetteBox.run('.grid-gallery', {
