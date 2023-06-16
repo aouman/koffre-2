@@ -234,7 +234,7 @@
         
         /***Pargination***/
 
-      getPagination('#table-id');
+      getPagination('.table-id');
 
       function getPagination(table) {
         var lastPage = 1;
@@ -440,9 +440,13 @@
 
       })(document);
 
+      //Filtrer par date
+
+      
+
       //Télécharger en PDF
 
-        var doc = new jsPDF();
+        /*var doc = new jsPDF();
         var specialElementHandlers = {
             '#editor': function (element, renderer) {
                 return true;
@@ -456,3 +460,18 @@
             });
             doc.save('sample-file.pdf');
         });
+*/
+
+function createPDF() {
+  var element = document.getElementById('element-to-print');
+  html2pdf(element, {
+      margin:1,
+      padding:0,
+      filename: 'myfile.pdf',
+      image: { type: 'jpeg', quality: 1 },
+      html2canvas: { scale: 2,  logging: true },
+      jsPDF: { unit: 'in', format: 'A2', orientation: 'P' },
+      class: createPDF
+  });
+};
+ 

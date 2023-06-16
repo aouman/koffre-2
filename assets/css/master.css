@@ -630,3 +630,7 @@ p {
 .pagination li{
   cursor: pointer;
 }
+
+.btn-pdf{
+  font-size: 13px;
+}

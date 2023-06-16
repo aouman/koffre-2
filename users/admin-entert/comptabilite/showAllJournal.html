@@ -199,52 +199,16 @@
       </div>
       
       <div class="container">
-        <h4 class="font-weight-bold">Journal Comptable : 2023</h4>
-        <div class="line-225 border w-50 btn-shadow rounded-pill" ></div>
+        <h4 class="font-weight-bold">Journal Comptable</h4>
+        <div class="line-225 border w-25 rounded-pill" ></div>
         <div class="row mt-4">
-          <div class="col-md-2">
-            <button class="btn btn-outline-info rounded-pill font-weight-bold px-md-5 px-3 boxx-shadow mb-3" data-toggle="modal" data-target="#addCompt-25Modal">Ajouter</button>
-          </div>
-          <div class="col-md-2 mb-3">
-            <select class="form-control btn border-r btn-shadow" id="maxRows">
-              <option value="5000">Tout afficher</option>
-              <option value="5">5</option>
-              <option value="10">10</option>
-              <option value="15">15</option>
-              <option value="20">20</option>
-              <option value="50">50</option>
-              <option value="70">70</option>
-              <option value="100">100</option>
-            </select>
-          </div>
-          <div class="col-md-2 mb-3">
-            <select type="search" data-table="order-table" class="form-control btn border-r btn-shadow select-table-filter">
-              <option value="" >Mois</option>
-              <option value="/01/">Janvier</option>
-              <option value="/02/">Fevrier</option>
-              <option value="/03/">Mars</option>
-              <option value="/04/">Avril</option>
-              <option value="/05/">Mai</option>
-              <option value="/06/">Juin</option>
-              <option value="/07">Juillet</option>
-              <option value="/08/">Aout</option>
-              <option value="/09/">Septembre</option>
-              <option value="/10/">Octobre</option>
-              <option value="/11/">Novembre</option>
-              <option value="/12/">Decembre</option>
-            </select>
-            
-          </div>
-          <div class="col-md-2 mb-3">
+                   
+          <div class="col-md-10 mb-3">
             <div class="tb_search">
               <input type="search" data-table="order-table" placeholder="Filtrer" class="form-control light-table-filter">
             </div>
           </div>
-          <div class="col-md-2 mb-3">
-            <div class="">
-              <button class="btn btn-success border-r btn-pdf boxx-shadow py-2 font-weight-bold"  onclick="createPDF()"><span><i class='bx bxs-cloud-download'></i></span> Télécharger PDF</button>
-            </div>
-          </div>
+          
           <div class="col-md-2">
             <div class="">
               <a href="showAllJournal.html" class="btn btn-secondary border-r boxx-shadow"><span><i class='bx bx-plus-circle'></i></span> Voir plus</a>
@@ -253,164 +217,51 @@
         </div>
         <div class="row pt-4">
             <div class="col-md-12">
-              <div class="table-responsive boxx-shadow border-r mb-3" id="">
-                <table class="table table-bordered table-striped mb-0 order-table table-id " id= "element-to-print">
-                  <thead>
-                    <tr>
-                      <th scope="col">Date	</th>
-                      <th scope="col">Compte	</th>
-                      <th scope="col">Description	</th>
-                      <th scope="col">Débit	</th>
-                      <th scope="col">Crédit	</th>
-                      <th scope="col">Action	</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">15/06/2023</th>
-                      <td>Mark</td>
-                      <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                      <td>1060000 <span>Fcfa</span></td>
-                      <td>@mdo <span>Fcfa</span></td>
-                      <td>
-                        <button class="btn-sm btn btn-success"><i class='bx bxs-edit'></i> </button>
-                        <button class="btn-sm btn btn-danger"><i class='bx bx-trash'></i> </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">15/06/2023</th>
-                      <td>Mark</td>
-                      <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                      <td>@mdo <span>Fcfa</span></td>
-                      <td>@mdo <span>Fcfa</span></td>
-                      <td>
-                        <button class="btn-sm btn btn-success"><i class='bx bxs-edit'></i> </button>
-                        <button class="btn-sm btn btn-danger"><i class='bx bx-trash'></i> </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>6089551212</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                      <td>@mdo</td>
-                      <td>1066985</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                      <td>@mdo</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                      <td>@mdo</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                      <td>@mdo</td>
-                      <td>@mdo</td>
-                    </tr>
-                    
-                  </tbody>
-                </table>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                    <!--		Start Pagination -->
-                    <div class='pagination-container' >
-                      <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-end">
-                          
-                          <li class="page-item rounded-left page-link" data-page="prev" >
-                            <span> <i class='bx bx-chevron-left'></i> <span class="sr-only">(current)</span></span>
-                          </li>
-                        <!--	Here the JS Function Will Add the Rows -->
-                          <li class="page-item rounded-right page-link" data-page="next" id="prev">
-                            <span> <i class='bx bx-chevron-right'></i> <span class="sr-only">(current)</span></span>
-                          </li>
-                        </ul>
-                      </nav>
+                <div class="row row-cols-1 row-cols-md-4">
+                    <div class="col mb-4">
+                      <div class="card h-100 border-0 boxx-shadow">
+                        <div class="card-body">
+                          <h5 class="card-title d-flex align-items-center justify-content-between">2023 <a href="#" class="ml-2 btn boxx-shadow border-r badge font-weight-light" ><i class='bx bx-plus-circle'></i> Voir plus </a></h5>
+                          <p class="card-text">
+                            <button class="btn-sm btn btn-danger" data-toggle="modal" data-target="#delCompt-25Modal"><i class='bx bx-trash'></i> </button>
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                </div>
-              </div>
+                  </div>
             </div>
         </div>
       </div>
 
       <!--		LES MODALES -->
 
-        <!--		Les modales d'ajout de journal compta-->
+        <!--		Les modales supprimer de journal compta-->
 
-        <div class="modal fade" id="addCompt-25Modal" data-backdrop="static" tabindex="-1" aria-labelledby="addCompt-25ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-              <div class="modal-header border-0">
-                <h5 class="modal-title" id="addCompt-25ModalLabel">Ajouter un element comptat</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="card border-r btn-shadow">
-                  <div class="card-body">
-                    <form>
-                      <div class="form-row mb-3">
-                        <div class="col mb-2">
-                          <label>Date</label>
-                          <input type="date" class="form-control" placeholder="First name">
-                        </div>
-                        <div class="col mb-2">
-                          <label>Compte</label>
-                          <input type="text" class="form-control" placeholder="Koffi ....">
-                        </div>
+        <div class="modal fade" id="delCompt-25Modal" data-backdrop="static" tabindex="-1" aria-labelledby="delCompt-25ModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <h5 class="modal-title" id="delCompt-25ModalLabel">Supprimer le journal comptat</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <h4 class="h6">Voulez-vous définiment supprimer ce journalCompta?</h4>
+                      <div>
+                        <button class="btn btn-danger boxx-shadow mr-md-2">Oui</button>
+                        <button class="btn btn-info boxx-shadow" data-dismiss="modal">Non</button>
                       </div>
-                      <div class="form-row mb-3">
-                        <div class="col mb-2">
-                          <label>Débit</label>
-                          <input type="number" class="form-control" placeholder="1502500202">
-                        </div>
-                        <div class="col mb-2">
-                          <label>Crédit</label>
-                          <input type="number" class="form-control" placeholder="25000000">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <label>Description</label>
-                        <textarea class="form-control" rows="3"></textarea>
-                      </div>
-                      <div class="text-center">
-                        <button type="submit" class="btn border-r btn-shadow px-md-5 font-weight-bold">Ajouter</button>
-                      </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="modal-footer border-0">
-                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fermer</button>
-              </div>
             </div>
           </div>
-        </div>
-
-      <!--		FIN DES MODALES -->
-
+  
+        <!--		FIN DES MODALES -->
     </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
