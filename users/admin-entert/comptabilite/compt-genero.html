@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../assets/css/master.css">
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- quill editor -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="//cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
+
+    <title>Tableau de bord</title>
+  </head>
+  <body>
+    <section class="main-dash-1 sidebar close">
+      <div class="">
+        <div class="logo-details bg-white">
+          <img src="../../../assets/media/kofre.png" class="img-fluid logo" width="130" alt="logo">
+          <!--span class="logo_name">
+            <a href="#"><img src="../../assets/media/kofre.png" class="img-fluid logo" width="150" alt="logo"></a> 
+          </span-->
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="../index_main.html">
+              <i class='bx bx-tachometer'></i>
+              <span class="link_name">Accueil</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="index_main.html">Accueil</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../info.html">
+              <i class='bx bx-info-circle'></i>
+              <span class="link_name">informations</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="info.html">informations</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="comptabilite.html" class="act-show">
+              <i class='bx bxs-bank'></i>
+              <span class="link_name">Comptabilité</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="comptabilite.html">Comptabilité</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-clipboard'></i>
+              <span class="link_name">Stock</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Stock</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-list-check'></i>
+              <span class="link_name">Mes taches</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Mes taches</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-chat'></i>
+              <span class="link_name">Chat</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Chat</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-calendar'></i>
+              <span class="link_name">Agendas</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Agendas</a></li>
+            </ul>
+          </li>  
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-user-plus'></i>
+              <span class="link_name">Mon équipe</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Mon équipe</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-message-detail'></i>
+              <span class="link_name">Message</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Message</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-credit-card'></i>
+              <span class="link_name">Abonnement</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Abonnement</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-cog' ></i>
+              <span class="link_name">Paramètre</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Paramètre</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
+  <!--END MENU-->
+  
+    <section class="home-section">
+      <div class="home-content badge d-flex justify-content-between align-items-center position-sticky">
+        <div class="heard-225 d-flex justify-content-between align-items-center ">
+          <i class='bx bx-menu' ></i>
+          <span class="text d-md-block d-none"> 
+            <p class="mb-0 d-flex justify-content-between align-items-center">
+              <i class='bx bxs-bank pr-3'></i>
+             Comptabilité
+            </p>
+          </span>
+        </div>
+        <div class="elment-menu">
+          <ul class="nav justify-content-end">
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2 active" href="#">
+                <i class='bx bx-help-circle h4 mb-0'></i>
+              </a>
+            </li>
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2" href="#">
+                <i class='bx bx-bell h4 mb-0'></i>
+              </a>
+            </li>
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                <i class='bx bx-user h4 mb-0'></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="container" id="compt-225">
+        <div class="row py-4">
+          <div class="col-md-12">
+            <a href="journalCompta.html" class="btn mb-3 bg-warning text-white font-weight-bold boxx-shadow border-r">Journal Compta</a>
+            <a href="revenue.html" class="btn mb-3 bg-success text-white font-weight-bold boxx-shadow border-r">Revenues</a>
+            <a href="depense.html" class="btn mb-3 bg-danger text-white font-weight-bold boxx-shadow border-r">Dépences</a>
+            <a href="compt-genero.html" class="btn mb-3 bg-color text-white font-weight-bold boxx-shadow border-r">Compte Généraux</a>
+            <a href="comptA.html" class="btn mb-3 bg-color-2 text-white font-weight-bold boxx-shadow border-r">Compte Auxiliaire</a>
+            <a href="invoices.html" class="btn mb-3 bg-color-3 text-white font-weight-bold boxx-shadow border-r">Facture</a>
+            <a href="devis.html" class="btn mb-3 bg-dark text-white font-weight-bold boxx-shadow border-r">Dévis</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <h4 class="font-weight-bold">Compte Généraux : 2023</h4>
+        <div class="line-225 border w-50 btn-shadow rounded-pill" ></div>
+        <div class="row mt-4">
+          <div class="col-md-2">
+            <button class="btn btn-outline-info rounded-pill font-weight-bold px-md-5 px-3 boxx-shadow mb-3" data-toggle="modal" data-target="#compt-25Modal">Ajouter</button>
+          </div>
+          <div class="col-md-2 mb-3">
+            <select class="form-control btn border-r btn-shadow" id="maxRows">
+              <option value="5000">Tout afficher</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="50">50</option>
+              <option value="70">70</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+          <div class="col-md-2 mb-3">
+            <select type="search" data-table="order-table" class="form-control btn border-r btn-shadow select-table-filter">
+              <option value="" >Mois</option>
+              <option value="/01/">Janvier</option>
+              <option value="/02/">Fevrier</option>
+              <option value="/03/">Mars</option>
+              <option value="/04/">Avril</option>
+              <option value="/05/">Mai</option>
+              <option value="/06/">Juin</option>
+              <option value="/07">Juillet</option>
+              <option value="/08/">Aout</option>
+              <option value="/09/">Septembre</option>
+              <option value="/10/">Octobre</option>
+              <option value="/11/">Novembre</option>
+              <option value="/12/">Decembre</option>
+            </select>
+            
+          </div>
+          <div class="col-md-2 mb-3">
+            <div class="tb_search">
+              <input type="search" data-table="order-table" placeholder="Filtrer" class="form-control light-table-filter">
+            </div>
+          </div>
+          <div class="col-md-2 mb-3">
+            <div class="">
+              <button class="btn btn-success border-r btn-pdf boxx-shadow py-2 font-weight-bold"  onclick="createPDF()"><span><i class='bx bxs-cloud-download'></i></span> Télécharger PDF</button>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="">
+              <a href="revenueAllShow.html" class="btn btn-secondary border-r boxx-shadow"><span><i class='bx bx-plus-circle'></i></span> Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-4">
+            <div class="col-md-12">
+              <h1 class="font-weight-light h2 btn btn-lg btn-shadow" > <span class="font-weight-bold">Total</span> : 25078936500 Fcfa</h1>
+              
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="category-container">
+                      <div class="category-head">
+                        Category
+                      </div>
+                      <div class="category-body">
+                        <button type="button" class="btn btn-outline-primary add-category">
+                      Add New Category Filter</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="category-element" style="display: none">
+                <div class="category-add-element">
+                  <div class="form-group">
+                    <input type="text" name="category" class="form-control" placeholder="Enter Category">
+                  </div>
+                  <button type="button" class="btn btn-outline-success btn-sm save-add-category">Save</button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm cancel-add-category">Cancel</button>
+                </div>
+                <div class="category-edit-element">
+                  <div class="form-group">
+                    <input type="text" name="category" class="form-control" placeholder="Enter Category">
+                  </div>
+                  <button type="button" class="btn btn-outline-success btn-sm save-edit-category">Save</button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm cancel-edit-category">Cancel</button>
+                   <button type="button" class="btn btn-outline-danger btn-sm delete-category" style="float: right">Delete</button>
+                </div>
+                <div class="category-result-element">
+                  <div class="category-list-title">
+                    <h3></h3>
+                    <button type="button" class="btn btn-success btn-sm edit-category">Edit</button>
+                    <br>
+                  </div>
+                  <div class="category-list-body">
+                    <button type="button" class="btn btn-link add-subcategory">+ Add Sub Category</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="subcategory-element" style="display: none">
+                <div class="subcategory-add-element">
+                  <div class="form-group">
+                    <input type="text" name="subcategory" class="form-control" placeholder="Enter Category">
+                  </div>
+                  <button type="button" class="btn btn-outline-success btn-sm save-add-subcategory">Save</button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm cancel-add-subcategory">Cancel</button>
+                </div>
+                <div class="subcategory-edit-element">
+                  <div class="form-group">
+                    <input type="text" name="subcategory" class="form-control" placeholder="Enter Category">
+                  </div>
+                  <button type="button" class="btn btn-outline-success btn-sm save-edit-subcategory">Save</button>
+                  <button type="button" class="btn btn-outline-secondary btn-sm cancel-edit-subcategory">Cancel</button>
+                   <button type="button" class="btn btn-outline-danger btn-sm delete-subcategory" style="float: right">Delete</button>
+                </div>
+                <div class="subcategory-result-element">
+                  <div class="subcategory-list-title">
+                    <em></em>
+                    <button type="button" class="btn btn-success btn-sm edit-subcategory">Edit</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <!--		LES MODALES -->
+
+        <!--		Les modales d'ajout de journal compta-->
+
+        <div class="modal fade" id="compt-25Modal" data-backdrop="static" tabindex="-1" aria-labelledby="compt-25ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="compt-25ModalLabel">Ajouter une entrée d'argent</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="card border-r btn-shadow">
+                  <div class="card-body">
+                    <form>
+                      <div class="form-row mb-3">
+                        <div class="col mb-2">
+                          <label>Date</label>
+                          <input type="date" class="form-control" placeholder="First name">
+                        </div>
+                        <div class="col mb-2">
+                          <label>Montant</label>
+                          <input type="number" class="form-control" placeholder="1502500202">
+                        </div>
+                      </div>
+                      
+                      <div class="form-group">
+                        <label>Description</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                      </div>
+                      <div class="text-center">
+                        <button type="submit" class="btn border-r btn-shadow px-md-5 font-weight-bold">Ajouter</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!--		FIN DES MODALES -->
+
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+    <script src="https://cdn.bootcss.com/html2pdf.js/0.9.1/html2pdf.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.1/html2pdf.bundle.min.js"></script>
+    <script src="../../../assets/js/index.js"></script>
+    
+
+    <!-- Include the Quill library -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
+
+    <!-- Initialize Quill editor -->
+    <script>
+      var quill = new Quill('#editor', {
+        theme: 'snow'
+      });
+    </script> 
+
+    <script>
+      $('.add-category').on('click', function(){
+  var $e = $(this);
+  var $categoryBody = $('.category-body');
+  var $categoryElement = $('.category-element .category-add-element');
+  
+  $('<div class="category-list"></div>').insertBefore($e);
+  $categoryElement.clone().appendTo($categoryBody.find('.category-list:last'));
+});
+
+$(document).on('click', '.cancel-add-category', function(){
+  var $e = $(this);
+  $e.closest('.category-add-element').remove();
+});
+
+$(document).on('click', '.save-add-category', function(){
+  var $e = $(this);
+  var $closeAdd = $e.siblings('.cancel-add-category');
+  var $val = $e.closest('.category-add-element').find('input').val();
+  var $categoryList = $e.closest('.category-list');
+  var $categoryElement = $('.category-element .category-result-element');
+  $categoryElement.clone().appendTo($categoryList);
+  $e.closest('.category-list').find('.category-list-title h3').text($val)
+  $closeAdd.trigger('click');
+});
+// add category end
+
+// edit category start
+$(document).on('click', '.edit-category', function(){
+  var $e = $(this);
+  var $categoryElement = $('.category-element .category-edit-element');
+  var $categoryList = $e.closest('.category-list');
+  var $categoryName = $e.siblings('h3').text();
+
+  $categoryElement.clone().appendTo($categoryList);
+  $categoryList.find('.category-edit-element input').val($categoryName).focus();
+  $e.closest('.category-result-element').hide();
+  
+});
+
+$(document).on('click', '.save-edit-category', function(){
+  var $e = $(this);
+  var $closeEdit = $e.siblings('.cancel-edit-category');
+  var $val = $e.closest('.category-edit-element').find('input').val();
+  var $categoryList = $e.closest('.category-list');
+  var $categoryElement = $('.category-element .category-result-element');
+  $e.closest('.category-list').find('.category-list-title h3').text($val)
+  $closeEdit.trigger('click');
+});
+
+$(document).on('click', '.cancel-edit-category', function(){
+  var $e = $(this);
+  var $categoryList = $e.closest('.category-list');
+  $e.closest('.category-edit-element').remove();
+  $categoryList.find('.category-result-element').show();
+});
+// edit category end
+
+// delete category start
+$(document).on('click', '.delete-category', function(){
+  var $e = $(this);
+  var $categoryList = $e.closest('.category-list');
+  var $closeEdit = $categoryList.find('.cancel-edit-category');
+  var $subLength = $categoryList.find('.category-list-body .subcategory-list').length
+  if($subLength != 0){
+   alert('gak boleh dihapus') 
+  } else{
+    $closeEdit.trigger('click');
+    $categoryList.slideUp(function(){
+      $(this).remove();
+    });
+  }
+});
+// delete category end
+
+
+
+
+
+// add sub category start
+$(document).on('click', '.add-subcategory', function(){
+  var $e = $(this);
+  var $categoryListBody = $e.closest('.category-list').find('.category-list-body');
+  var $categoryElement = $('.subcategory-element .subcategory-add-element');
+  
+  $('<div class="subcategory-list"></div>').insertBefore($e);
+  $categoryElement.clone().appendTo($categoryListBody.find('.subcategory-list:last'));
+});
+
+$(document).on('click', '.cancel-add-subcategory', function(){
+  var $e = $(this);
+  $e.closest('.subcategory-add-element').remove();
+});
+
+$(document).on('click', '.save-add-subcategory', function(){
+  var $e = $(this);
+  var $closeAdd = $e.siblings('.cancel-add-subcategory');
+  var $val = $e.closest('.subcategory-add-element').find('input').val();
+  var $subcategoryList = $e.closest('.subcategory-list');
+  var $subcategoryElement = $('.subcategory-element .subcategory-result-element');
+  $subcategoryElement.clone().appendTo($subcategoryList);
+  $e.closest('.subcategory-list').find('.subcategory-list-title em').text($val)
+  $closeAdd.trigger('click');
+});
+// add sub category end
+
+// edit sub category start
+$(document).on('click', '.edit-subcategory', function(){
+  var $e = $(this);
+  var $subcategoryElement = $('.subcategory-element .subcategory-edit-element');
+  var $subcategoryList = $e.closest('.subcategory-list');
+  var $subcategoryName = $e.siblings('em').text();
+
+  $subcategoryElement.clone().appendTo($subcategoryList);
+  $subcategoryList.find('.subcategory-edit-element input').val($subcategoryName).focus();
+  $e.closest('.subcategory-result-element').hide();
+  
+});
+
+$(document).on('click', '.save-edit-subcategory', function(){
+  var $e = $(this);
+  var $closeEdit = $e.siblings('.cancel-edit-subcategory');
+  var $val = $e.closest('.subcategory-edit-element').find('input').val();
+  var $subcategoryList = $e.closest('.subcategory-list');
+  var $subcategoryElement = $('.subcategory-element .subcategory-result-element');
+  $e.closest('.subcategory-list').find('.subcategory-list-title em').text($val)
+  $closeEdit.trigger('click');
+});
+
+$(document).on('click', '.cancel-edit-subcategory', function(){
+  var $e = $(this);
+  var $subcategoryList = $e.closest('.subcategory-list');
+  $e.closest('.subcategory-edit-element').remove();
+  $subcategoryList.find('.subcategory-result-element').show();
+});
+// edit sub category end
+
+// delete sub category start
+$(document).on('click', '.delete-subcategory', function(){
+  var $e = $(this);
+  var $subcategoryList = $e.closest('.subcategory-list');
+  var $closeEdit = $subcategoryList.find('.cancel-edit-subcategory');
+  
+  $closeEdit.trigger('click');
+  $subcategoryList.slideUp(function(){
+    $(this).remove();
+  })
+});
+// delete sub category end
+
+    </script>
+
+  </body>
+</html>

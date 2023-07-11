@@ -446,22 +446,6 @@
 
       //Télécharger en PDF
 
-        /*var doc = new jsPDF();
-        var specialElementHandlers = {
-            '#editor': function (element, renderer) {
-                return true;
-            }
-        };
-
-        $('#cmd').click(function () {
-            doc.fromHTML($('#content').html(), 15, 15, {
-                'width': 170,
-                    'elementHandlers': specialElementHandlers
-            });
-            doc.save('sample-file.pdf');
-        });
-*/
-
 function createPDF() {
   var element = document.getElementById('element-to-print');
   html2pdf(element, {
@@ -474,4 +458,132 @@ function createPDF() {
       class: createPDF
   });
 };
- 
+
+
+// INVOICESS
+
+$(document).ready(function(){
+  var i=1;
+  $("#add_contente").click(function(){b=i-1;
+      $('#addr'+i).html($('#addr'+b).html());
+      $('#invoice_id .invoices_contente').append('<ul class="list-group list-group-horizontal width-100 border-0 shadow-sm mb-3 " id="addr'+(i+1)+'"></ul>');
+      i++; 
+  });
+  $("#delete_row").click(function(){
+    if(i>1){
+  $("#addr"+(i-1)).html("");
+  i--;
+  }
+  calc();
+});
+
+$('#invoice_id .invoices_contente').on('keyup change',function(){
+  calc();
+});
+$('#tax1').on('keyup change',function(){
+  calc_total();
+});
+
+
+});
+
+function calc()
+{
+$('#invoice_id .invoices_contente ul').each(function(i, element) {
+  var html = $(this).html();
+  if(html!='')
+  {
+    var qty = $(this).find('.qty').val();
+    var price = $(this).find('.price').val();
+    $(this).find('.total').val(qty*price);
+    
+    calc_total();
+  }
+  });
+}
+
+function calc_total(){
+  total=0;
+  $('.total').each(function() {
+        total += parseInt($(this).val());
+    });
+  $('#sub_total').val(total.toFixed(0));
+  tax_sum=(total/100)*$('#tax1').val();
+  $('#tax_amount').val(tax_sum.toFixed(0));
+  $('#total_amount').val((tax_sum+total).toFixed(0));
+}
+
+// add logo invoice and devis
+
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function(e) {
+      $('#image-preview').attr('src', e.target.result);
+      $('#image-preview').hide();
+      $('#image-preview').fadeIn(650);
+    }
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("#file-input").change(function() {
+  readURL(this);
+});
+
+//COLOR PICKER
+
+// on input, get value and save it as 'storedValue'
+function changeColor() { 
+  var userColor = document.getElementById('colorID').value;
+  localStorage.setItem('storedValue', invoices__color.style.backgroundColor = userColor);
+}
+
+// if there is a value stored, update color picker and background color
+if(localStorage.storedValue) {
+  document.getElementById('colorID').value = localStorage.storedValue;
+  invoices__color.style.backgroundColor      = localStorage.storedValue;
+}
+
+//TEXT COLOR
+
+$(document).ready(function() {
+
+  $('.bGButton').find('button').click(function() {
+    $('body').removeClass('red orange yellow green blue purple grey white black');
+    var color = $(this).attr('class');
+    $('body').addClass(color);
+    console.log($('body').attr('class'));
+  });
+  
+ 	$('.textButton').find('button').click(function() {
+    $('body').removeClass('redText orangeText yellowText greenText blueText purpleText greyText whiteText blackText');
+    var tColor = $(this).attr('class');
+    $('body').addClass(tColor);
+    console.log($('body').attr('class'));
+  });
+
+});
+
+
+// filter the div element
+
+document.getElementById("value").addEventListener("keyup", filterSearch);
+function filterSearch(){
+   var value,nameSearch,boxSearch,i;
+   value = document.getElementById('value').value.toUpperCase();
+   boxSearch = document.getElementsByClassName('boxSearch');
+  for(i=0;boxSearch.length;i++){
+    nameSearch = boxSearch[i].getElementsByClassName('nameSearch');
+    if(nameSearch[0].innerHTML.toUpperCase().indexOf(value) > -1){
+      boxSearch[i].style.display ="block";
+    }else{
+      boxSearch[i].style.display = "none";
+    }
+  }  
+}
+
+
+
+
+

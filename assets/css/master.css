@@ -13,7 +13,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  list-style: none;
+  font-size: inherit;
+  text-decoration: none;
 }
+
+/*body{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}*/
+
 a{
     text-decoration: none!important;
 }
@@ -633,4 +642,133 @@ p {
 
 .btn-pdf{
   font-size: 13px;
+}
+
+.container-fluid{
+  padding: 10px
+}
+h3, h4{
+  display: inline-block
+}
+.category-list, .subcategory-list{
+  margin-bottom: 10px;
+}
+.category-list-body{
+ padding-left: 30px 
+}
+
+/*Invoice*/
+
+/* content editable */
+
+*[contenteditable] { border-radius: 0.25em; min-width: 1em; outline: 0; }
+
+*[contenteditable] { cursor: pointer; }
+
+*[contenteditable]:hover, 
+*[contenteditable]:focus, 
+td:hover *[contenteditable], 
+td:focus *[contenteditable], 
+img.hover { background: #DEF; 
+  box-shadow: 0 0 0.3em 0.2em #def; 
+}
+
+span[contenteditable] { display: inline-block; }
+
+
+/* table items */
+#invoice_id { clear: both; width: 100%; }
+
+
+#invoice_id div ul li:nth-child(1) { width: 30%; }
+#invoice_id div ul li:nth-child(2) { width: 15%; }
+#invoice_id div ul li:nth-child(3) { width: 30%; }
+#invoice_id div ul li:nth-child(4) { width: 25%; }
+
+@media print {
+	span:empty { display: none; }
+}
+
+.taxtttc{
+  width: 130px;
+}
+
+#add_contente , #delete_row{
+  width: 25px;
+  height: 25px;
+}
+
+/*.box_invoicess{
+  height: 50rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}*/
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ebebeb;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #4fa2c3; 
+}
+
+#image-preview{
+  height:150px;
+  width:auto;
+  display:block;
+  padding:5px;
+}
+
+.btn_add_logo{
+  display: table;
+   }
+
+.btn_add_logo > input[type="file"] {
+  display: none;
+}
+
+.redText{
+  color: FireBrick;
+}
+
+.orangeText{
+  color: Orange;
+}
+
+.yellowText{
+  color: yellow;
+}
+
+.greenText{
+  color: green;
+}
+
+.blueText{
+  color: DeepSkyBlue;
+}
+
+.purpleText{
+  color: RebeccaPurple;
+}
+
+.greyText{
+  color: grey;
+}
+
+.whiteText{
+  color:white;
+}
+
+.blackText{
+  color:black;
 }

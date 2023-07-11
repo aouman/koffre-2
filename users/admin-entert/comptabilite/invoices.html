@@ -199,13 +199,13 @@
       </div>
       
       <div class="container">
-        <h4 class="font-weight-bold">Journal Comptable : 2023</h4>
+        <h4 class="font-weight-bold">Mes factures : 2023</h4>
         <div class="line-225 border w-50 btn-shadow rounded-pill" ></div>
         <div class="row mt-4">
-          <!--div class="col-md-2">
-            <button class="btn btn-outline-info rounded-pill font-weight-bold px-md-5 px-3 boxx-shadow mb-3" data-toggle="modal" data-target="#addCompt-25Modal">Ajouter</button>
-          </div-->
-          <div class="col-md-3 mb-3">
+          <div class="col-md-2">
+            <button class="btn btn-outline-info rounded-pill font-weight-bold px-md-5 px-3 boxx-shadow mb-3" data-toggle="modal" data-target="#invoice-25Modal">Ajouter</button>
+          </div>
+          <div class="col-md-2 mb-3">
             <select class="form-control btn border-r btn-shadow" id="maxRows">
               <option value="5000">Tout afficher</option>
               <option value="5">5</option>
@@ -217,7 +217,7 @@
               <option value="100">100</option>
             </select>
           </div>
-          <div class="col-md-3 mb-3">
+          <div class="col-md-2 mb-3">
             <select type="search" data-table="order-table" class="form-control btn border-r btn-shadow select-table-filter">
               <option value="" >Mois</option>
               <option value="/01/">Janvier</option>
@@ -251,95 +251,128 @@
             </div>
           </div>
         </div>
-        <div class="row pt-4">
-            <div class="col-md-12">
-              <div class="mb-3 d-flex justify-content-between align-items-center flex-wrap">
-                <p class="font-weight-light h2 btn btn-lg btn-shadow"> <span class="font-weight-bold">Débit</span> : 150895662 <span>Fcfa</span></p>
-                <p class="font-weight-light h2 btn btn-lg btn-shadow"> <span class="font-weight-bold">Credit</span> : 150895662 <span>Fcfa</span></p>
-              </div>
-              <div class="table-responsive boxx-shadow border-r mb-3" id="">
-                <table class="table table-bordered table-striped mb-0 order-table table-id " id= "element-to-print">
-                  <thead>
-                    <tr>
-                      <th scope="col">Date	</th>
-                      <th scope="col">Compte	</th>
-                      <th scope="col">Description	</th>
-                      <th scope="col">Débit	</th>
-                      <th scope="col">Crédit	</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">15/06/2023</th>
-                      <td>Mark</td>
-                      <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                      <td>1060000 <span>Fcfa</span></td>
-                      <td>@mdo <span>Fcfa</span></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">15/06/2023</th>
-                      <td>Mark</td>
-                      <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
-                      <td>@mdo <span>Fcfa</span></td>
-                      <td>@mdo <span>Fcfa</span></td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>6089551212</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Larry</td>
-                      <td>the Bird</td>
-                      <td>@twitter</td>
-                      <td>@mdo</td>
-                    </tr>
-                    
-                  </tbody>
-                </table>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                    <!--		Start Pagination -->
-                    <div class='pagination-container' >
-                      <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-end">
-                          
-                          <li class="page-item rounded-left page-link" data-page="prev" >
-                            <span> <i class='bx bx-chevron-left'></i> <span class="sr-only">(current)</span></span>
+        <div class="row pt-4 mb-3">
+            <div class="col-md-8">
+                <div class="btn-shadow border-r p-md-3 mb-3">
+                  <header class="d-flex justify-content-between align-items-center">
+                    <address contenteditable>
+                      <p>Jonathan Neal</p>
+                      <p>101 E. Chapman Ave<br>Orange, CA 92866</p>
+                      <p>(800) 555-1234</p>
+                    </address>
+                    <span>
+                      <img alt="" src="http://www.jonathantneal.com/examples/invoice/logo.png">
+                      <input type="file" accept="image/*">
+                    </span>
+                  </header>
+                  <div class="article">
+                    <div class="d-flex flex-wrap justify-content-between align-items-baseline">
+                      <h1>Recipient</h1>
+                      <address contenteditable>
+                        <p>Some Company<br>c/o Some Guy</p>
+                      </address>
+                      <div class="meta mb-3">
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span class="badge">Facture N° :</span>
+                            <span contenteditable class="">14</span>
                           </li>
-                        <!--	Here the JS Function Will Add the Rows -->
-                          <li class="page-item rounded-right page-link" data-page="next" id="prev">
-                            <span> <i class='bx bx-chevron-right'></i> <span class="sr-only">(current)</span></span>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span class="badge">Date :</span>
+                            <span contenteditable class="">2</span>
+                          </li>
+                          <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span class="badge">Montant dû :</span>
+                            <span id="prefix" contenteditable> $ 600.00</span>
                           </li>
                         </ul>
-                      </nav>
+                      </div>
                     </div>
+                    <table class="meta">
+                      <tbody>
+                        <tr>
+                          <th><span contenteditable>Invoice #</span></th>
+                          <td><span contenteditable>101138</span></td>
+                        </tr>
+                        <tr>
+                          <th><span contenteditable>Date</span></th>
+                          <td><span contenteditable>January 1, 2012</span></td>
+                        </tr>
+                        <tr>
+                          <th><span contenteditable>Amount Due</span></th>
+                          <td><span id="prefix" contenteditable>$</span><span>600.00</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <div class="inventory">
+                      <div class="hearder">
+                        <ul class="list-group list-group-horizontal">
+                          <li class="list-group-item badge px-0">Produits </li>
+                          <li class="list-group-item badge px-0">Description</li>
+                          <li class="list-group-item badge px-0">Prix U.</li>
+                          <li class="list-group-item badge px-0">Quantité</li>
+                          <li class="list-group-item badge px-0">Prix T</li>
+                        </ul>
+                      </div>
+                      <div class="inventory-element">
+                        <ul class="list-group list-group-horizontal">
+                          <li class="list-group-item font-weight-light h-auto px-1"><a class="cut"><i class='bx bx-minus'></i></a> <span class="w-100 h-auto" contenteditable>Front End Consultation</span></li>
+                          <li class="list-group-item font-weight-light h-auto px-1"><span class="w-100 h-auto" contenteditable>Experience Review</span></li>
+                          <li class="list-group-item font-weight-light h-auto px-1"><span class="w-75 h-auto" contenteditable>150.00</span><span data-prefix>Fcfa</span></li>
+                          <li class="list-group-item font-weight-light h-auto px-1"><span class="w-100 h-auto" contenteditable>4</span></li>
+                          <li class="list-group-item font-weight-light h-auto px-1"><span class="w-100 h-auto" data-prefix>$</span><span>600.00</span></li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <table class="inventory">
+                      <thead>
+                        <tr>
+                          <th><span contenteditable>Item</span></th>
+                          <th><span contenteditable>Description</span></th>
+                          <th><span contenteditable>Prix U.</span></th>
+                          <th><span contenteditable>Quantité</span></th>
+                          <th><span contenteditable>Prix total</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><a class="cut"><i class='bx bx-minus'></i></a><span contenteditable>Front End Consultation</span></td>
+                          <td><span contenteditable>Experience Review</span></td>
+                          <td><span data-prefix>$</span><span contenteditable>150.00</span></td>
+                          <td><span contenteditable>4</span></td>
+                          <td><span data-prefix>$</span><span>600.00</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <a class="add"><i class='bx bx-plus'></i></a>
+                    <table class="balance">
+                      <tr>
+                        <th><span contenteditable>Total</span></th>
+                        <td><span data-prefix>$</span><span>600.00</span></td>
+                      </tr>
+                      <tr>
+                        <th><span contenteditable>Amount Paid</span></th>
+                        <td><span data-prefix>$</span><span contenteditable>0.00</span></td>
+                      </tr>
+                      <tr>
+                        <th><span contenteditable>Balance Due</span></th>
+                        <td><span data-prefix>$</span><span>600.00</span></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <aside>
+                    <h1><span contenteditable>Additional Notes</span></h1>
+                    <div contenteditable>
+                      <p>A finance charge of 1.5% will be made on unpaid balances after 30 days.</p>
+                    </div>
+                  </aside>
                 </div>
+            </div>
+            <div class="col-md-4">
+              <div class="btn-shadow border-r p-md-3">
+              
               </div>
             </div>
         </div>
@@ -349,11 +382,11 @@
 
         <!--		Les modales d'ajout de journal compta-->
 
-        <div class="modal fade" id="addCompt-25Modal" data-backdrop="static" tabindex="-1" aria-labelledby="addCompt-25ModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal fade" id="invoice-25Modal" data-backdrop="static" tabindex="-1" aria-labelledby="invoice-25ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header border-0">
-                <h5 class="modal-title" id="addCompt-25ModalLabel">Ajouter un element comptat</h5>
+                <h5 class="modal-title" id="invoice-25ModalLabel">Ajouter un element comptat</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -432,7 +465,9 @@
       });
     </script> 
 
-    
+    <script>
+ 
+    </script>
 
   </body>
 </html>

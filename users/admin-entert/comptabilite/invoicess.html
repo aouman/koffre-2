@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../assets/css/master.css">
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- quill editor -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="//cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
+
+    <title>Tableau de bord</title>
+  </head>
+  <body>
+    <section class="main-dash-1 sidebar close">
+      <div class="">
+        <div class="logo-details bg-white">
+          <img src="../../../assets/media/kofre.png" class="img-fluid logo" width="130" alt="logo">
+          <!--span class="logo_name">
+            <a href="#"><img src="../../assets/media/kofre.png" class="img-fluid logo" width="150" alt="logo"></a> 
+          </span-->
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="../index_main.html">
+              <i class='bx bx-tachometer'></i>
+              <span class="link_name">Accueil</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="index_main.html">Accueil</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../info.html">
+              <i class='bx bx-info-circle'></i>
+              <span class="link_name">informations</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="info.html">informations</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="comptabilite.html" class="act-show">
+              <i class='bx bxs-bank'></i>
+              <span class="link_name">Comptabilité</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="comptabilite.html">Comptabilité</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-clipboard'></i>
+              <span class="link_name">Stock</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Stock</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-list-check'></i>
+              <span class="link_name">Mes taches</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Mes taches</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-chat'></i>
+              <span class="link_name">Chat</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Chat</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-calendar'></i>
+              <span class="link_name">Agendas</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Agendas</a></li>
+            </ul>
+          </li>  
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-user-plus'></i>
+              <span class="link_name">Mon équipe</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Mon équipe</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-message-detail'></i>
+              <span class="link_name">Message</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Message</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-credit-card'></i>
+              <span class="link_name">Abonnement</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Abonnement</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-cog' ></i>
+              <span class="link_name">Paramètre</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Paramètre</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
+  <!--END MENU-->
+  
+    <section class="home-section">
+      <div class="home-content badge d-flex justify-content-between align-items-center position-sticky">
+        <div class="heard-225 d-flex justify-content-between align-items-center ">
+          <i class='bx bx-menu' ></i>
+          <span class="text d-md-block d-none"> 
+            <p class="mb-0 d-flex justify-content-between align-items-center">
+              <i class='bx bxs-bank pr-3'></i>
+             Comptabilité
+            </p>
+          </span>
+        </div>
+        <div class="elment-menu">
+          <ul class="nav justify-content-end">
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2 active" href="#">
+                <i class='bx bx-help-circle h4 mb-0'></i>
+              </a>
+            </li>
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2" href="#">
+                <i class='bx bx-bell h4 mb-0'></i>
+              </a>
+            </li>
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                <i class='bx bx-user h4 mb-0'></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="container" id="compt-225">
+        <div class="row py-4">
+          <div class="col-md-12">
+            <a href="journalCompta.html" class="btn mb-3 bg-warning text-white font-weight-bold boxx-shadow border-r">Journal Compta</a>
+            <a href="revenue.html" class="btn mb-3 bg-success text-white font-weight-bold boxx-shadow border-r">Revenues</a>
+            <a href="depense.html" class="btn mb-3 bg-danger text-white font-weight-bold boxx-shadow border-r">Dépences</a>
+            <a href="compt-genero.html" class="btn mb-3 bg-color text-white font-weight-bold boxx-shadow border-r">Compte Généraux</a>
+            <a href="comptA.html" class="btn mb-3 bg-color-2 text-white font-weight-bold boxx-shadow border-r">Compte Auxiliaire</a>
+            <a href="invoices.html" class="btn mb-3 bg-color-3 text-white font-weight-bold boxx-shadow border-r">Facture</a>
+            <a href="devis.html" class="btn mb-3 bg-dark text-white font-weight-bold boxx-shadow border-r">Dévis</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <h4 class="font-weight-bold">Mes factures : 2023</h4>
+        <div class="line-225 border w-50 btn-shadow rounded-pill" ></div>
+        <div class="row mt-4">
+          <div class="col-md-2">
+            <button class="btn btn-outline-info rounded-pill font-weight-bold px-md-5 px-3 boxx-shadow mb-3" data-toggle="modal" data-target="#invoice-25Modal">Ajouter</button>
+          </div>
+          <div class="col-md-2 mb-3">
+            <select class="form-control btn border-r btn-shadow" id="maxRows">
+              <option value="5000">Tout afficher</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="50">50</option>
+              <option value="70">70</option>
+              <option value="100">100</option>
+            </select>
+          </div>
+          <div class="col-md-2 mb-3">
+            <select type="search" data-table="order-table" class="form-control btn border-r btn-shadow select-table-filter">
+              <option value="" >Mois</option>
+              <option value="/01/">Janvier</option>
+              <option value="/02/">Fevrier</option>
+              <option value="/03/">Mars</option>
+              <option value="/04/">Avril</option>
+              <option value="/05/">Mai</option>
+              <option value="/06/">Juin</option>
+              <option value="/07">Juillet</option>
+              <option value="/08/">Aout</option>
+              <option value="/09/">Septembre</option>
+              <option value="/10/">Octobre</option>
+              <option value="/11/">Novembre</option>
+              <option value="/12/">Decembre</option>
+            </select>
+            
+          </div>
+          <div class="col-md-2 mb-3">
+            <div class="tb_search">
+              <input type="search" data-table="order-table" placeholder="Filtrer" class="form-control light-table-filter">
+            </div>
+          </div>
+          <div class="col-md-2 mb-3">
+            <div class="">
+              <button class="btn btn-success border-r btn-pdf boxx-shadow py-2 font-weight-bold"  onclick="createPDF()"><span><i class='bx bxs-cloud-download'></i></span> Télécharger PDF</button>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="">
+              <a href="showAllJournal.html" class="btn btn-secondary border-r boxx-shadow"><span><i class='bx bx-plus-circle'></i></span> Voir plus</a>
+            </div>
+          </div>
+        </div>
+        <!--div class="row pt-4 mb-3">
+            <div class="col-md-8">
+                <div class="btn-shadow border-r p-md-3 mb-3 box_invoicess">
+                  
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <div id='img_contain'>
+                              <img class="mx-auto" id="image-preview" align='middle'src="http://www.clker.com/cliparts/c/W/h/n/P/W/generic-image-file-icon-hi.png" alt="your image" title=''/>
+                            </div>  
+                            <label class="btn_add_logo  btn btn-shadow border-r text-dark mx-auto" for="file-input">
+                              Ajouter votre logo
+                              <input class="form-control-file" type='file' id="file-input" />
+                            </label>                          
+                            <input type="text" class="form-control" placeholder="Saisir un logo">
+
+                            
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="meta mb-3">
+                            <ul class="list-group btn-shadow">
+                              <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                <span class="badge">Facture N° :</span>
+                                <span contenteditable class="">14</span>
+                              </li>
+                              <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                <span class="badge">Date :</span>
+                                <span class="form-group">
+                                  <input contenteditable type="date" class="form-control border-0 p-0" id="exampleFormControlInput1" placeholder="name@example.com">
+                                </span>
+                              </li>
+                              <!--li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                <span class="badge">Montant dû :</span>
+                                <span id="prefix" contenteditable> $ 600.00</span>
+                              </li->
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-md-6">
+                          <div class="card border-0">
+                            <div class="card-body boxx-shadow p-md-4 border-r">
+                              <h4 class="h6 text-capitalize">Info de votre entreprise</h4>
+                              <div class="form-group">
+                                <input contenteditable type="text" class="form-control border-0" placeholder="Nom et prenom ou entreprise">
+                              </div>
+                              <div class="form-group">
+                                <input contenteditable type="email" class="form-control border-0" placeholder="E-mail">
+                              </div>
+                              <div class="form-group">
+                                <input contenteditable type="tel" class="form-control border-0" placeholder="Telephone">
+                              </div>
+                              <div class="form-group">
+                                <input contenteditable type="text" class="form-control border-0" placeholder="Adresse">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="card border-0">
+                            <div class="card-body boxx-shadow p-md-4 border-r">
+                              <h4 class="h6 text-capitalize">Facturer à :</h4>
+                              <div class="form-group">
+                                <input contenteditable type="text" class="form-control border-0" placeholder="Nom et prenom ou entreprise">
+                              </div>
+                              <div class="form-group">
+                                <input contenteditable type="email" class="form-control border-0" placeholder="E-mail">
+                              </div>
+                              <div class="form-group">
+                                <input contenteditable type="tel" class="form-control border-0" placeholder="Telephone">
+                              </div>
+                              <div class="form-group">
+                                <input contenteditable type="text" class="form-control border-0" placeholder="Adresse">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <label for="colorPicker">Choose a color:</label>
+                            <input type="color" value="#e0ffee" id="colorPicker">
+
+                            <b>Current color code: <code id="colorCode"></code></b>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div id="invoice_id">
+                                <div class="invoices_hearder">
+                                    <ul class="list-group list-group-horizontal width-100 btn-shadow mb-2 bg-input text-input">
+                                        <li class="list-group-item text-center font-weight-bold bg-transparent">Designation</li>
+                                        <li class="list-group-item text-center font-weight-bold">Quantité</li>
+                                        <li class="list-group-item text-center font-weight-bold">Prix U.</li>
+                                        <li class="list-group-item text-center font-weight-bold">Total HT </li>
+                                    </ul>
+                                </div>
+                                <div class="invoices_contente">
+                                    <ul id='addr0' class="list-group list-group-horizontal width-100 border-0 shadow-sm mb-3">
+                                        <li class="list-group-item p-1 h-auto border-0">
+                                          <textarea class="form-control" name='product[]'  placeholder='Enter Product Name' rows="3"></textarea>
+                                        </li>
+                                        <li class="list-group-item p-1 h-auto border-0">
+                                          <input type="number" name='qty[]' placeholder='Enter Qty' class="form-control h-100 qty" step="0" min="0"/>
+                                        </li>
+                                        <li class="list-group-item p-1 h-auto border-0">
+                                          <input type="number" name='price[]' placeholder='Enter Unit Price' class="form-control h-100 price" step="0.00" min="0"/>
+                                        </li>
+                                        <li class="list-group-item p-1 h-auto border-0">
+                                          <input type="number" name='total[]' placeholder='0.00' class="form-control h-100 total" readonly/>
+                                        </li>
+                                    </ul>
+                                    <ul id='addr1' class="list-group list-group-horizontal width-100 border-0 shadow-sm mb-3"></ul>
+                                </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12 my-3">
+                            <button id="add_contente" class="btn btn-success text-center p-0 rounded-circle boxx-shadow "><i class='bx bx-plus'></i></button>
+                            <button id='delete_row' class="btn btn-danger p-0 rounded-circle boxx-shadow "><i class='bx bx-minus'></i></button>
+                          </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                          <div class="col-md-8">
+                            <div>
+                                <div id="invoice_total_id">
+                                    <ul class="list-group btn-shadow">
+                                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                          Total General HT
+                                          <span class=""><input type="number" name='sub_total' placeholder='0.00' class="form-control" id="sub_total" readonly/></span>
+                                        </li>
+                                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                          <div class="input-group input-group-sm taxtttc">
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text bg-white border-0">TAX:</span>
+                                            </div>
+                                            <input type="number" class="form-control" id="tax1" placeholder="0">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-white border-0">%</span>
+                                              </div>
+                                          </div>
+                                          <span class=""><input type="number" name='tax_amount' id="tax_amount" placeholder='0.00' class="form-control" readonly/></span>
+                                        </li>
+                                        <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                          Total TTC
+                                          <span class=""><input type="number" name='total_amount' id="total_amount" placeholder='0.00' class="form-control" readonly/></span>
+                                        </li>
+                                      </ul>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="text-uppercase">
+                              <h4 class="py-2 mt-3">Valeur en lettre</h4>
+                            </div>
+                            <p class="font-weight-bold" contenteditable>Deux cents trente mille <span>Franc CFAS</span></p>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="text-uppercase">
+                              <h4 class="py-4">Informations additionnel (Facultatif)</h4>
+                            </div>
+                            <p contenteditable>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nisi eum, modi autem repellendus, sunt necessitatibus voluptate saepe, voluptatibus omnis inventore? Aspernatur facere praesentium voluptatem voluptate et, vero voluptas earum.</p>
+                          </div>
+                        </div>
+                      </div>
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="btn-shadow border-r p-md-3 show_invoice">
+                <div class="row">
+                  <div class="shows">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div-->
+      </div>
+
+      <!--		LES MODALES -->
+
+        <!--		Les modales d'ajout de journal compta-->
+
+        <div class="modal fade" id="invoice-25Modal" data-backdrop="static" tabindex="-1" aria-labelledby="invoice-25ModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h5 class="modal-title" id="invoice-25ModalLabel">Ajouter un element comptat</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="card border-r btn-shadow">
+                  <div class="card-body">
+                    <form>
+                      <div class="row pt-4 mb-3">
+                        <div class="col-md-8">
+                            <div class="btn-shadow border-r p-md-3 mb-3 box_invoicess">
+                              
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group">
+                                        <div id='img_contain'>
+                                          <img class="mx-auto" id="image-preview" align='middle'src="http://www.clker.com/cliparts/c/W/h/n/P/W/generic-image-file-icon-hi.png" alt="your image" title=''/>
+                                        </div>  
+                                        <label class="btn_add_logo  btn btn-shadow border-r text-dark mx-auto" for="file-input">
+                                          Ajouter votre logo
+                                          <input class="form-control-file" type='file' id="file-input" />
+                                        </label>                          
+                                        <input type="text" class="form-control" placeholder="Saisir un logo">
+            
+                                        
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="meta mb-3">
+                                        <ul class="list-group btn-shadow">
+                                          <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                            <span class="badge">Facture N° :</span>
+                                            <span contenteditable class="">14</span>
+                                          </li>
+                                          <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                            <span class="badge">Date :</span>
+                                            <span class="form-group">
+                                              <input contenteditable type="date" class="form-control border-0 p-0" id="exampleFormControlInput1" placeholder="name@example.com">
+                                            </span>
+                                          </li>
+                                          <!--li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                            <span class="badge">Montant dû :</span>
+                                            <span id="prefix" contenteditable> $ 600.00</span>
+                                          </li-->
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row mb-3">
+                                    <div class="col-md-6">
+                                      <div class="card border-0">
+                                        <div class="card-body boxx-shadow p-md-4 border-r">
+                                          <h4 class="h6 text-capitalize">Info de votre entreprise</h4>
+                                          <div class="form-group">
+                                            <input contenteditable type="text" class="form-control border-0" placeholder="Nom et prenom ou entreprise">
+                                          </div>
+                                          <div class="form-group">
+                                            <input contenteditable type="email" class="form-control border-0" placeholder="E-mail">
+                                          </div>
+                                          <div class="form-group">
+                                            <input contenteditable type="tel" class="form-control border-0" placeholder="Telephone">
+                                          </div>
+                                          <div class="form-group">
+                                            <input contenteditable type="text" class="form-control border-0" placeholder="Adresse">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="card border-0">
+                                        <div class="card-body boxx-shadow p-md-4 border-r">
+                                          <h4 class="h6 text-capitalize">Facturer à :</h4>
+                                          <div class="form-group">
+                                            <input contenteditable type="text" class="form-control border-0" placeholder="Nom et prenom ou entreprise">
+                                          </div>
+                                          <div class="form-group">
+                                            <input contenteditable type="email" class="form-control border-0" placeholder="E-mail">
+                                          </div>
+                                          <div class="form-group">
+                                            <input contenteditable type="tel" class="form-control border-0" placeholder="Telephone">
+                                          </div>
+                                          <div class="form-group">
+                                            <input contenteditable type="text" class="form-control border-0" placeholder="Adresse">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <label for="colorPicker">Choose a color:</label>
+                                        <input type="color" id="colorID" oninput="changeColor()">
+
+                                        <div>
+                                          <div class="textButton">
+                                            <span class="redText">red</span>
+                                            <span class="orangeText">orange</span>
+                                            <span class="yellowText">yellow</span>
+                                            <span class="greenText">green</span>
+                                            <span class="blueText">blue</span>
+                                            <span class="purpleText">purple</span>
+                                            <span class="greyText">grey</span>
+                                            <span class="whiteText">white</span>
+                                            <span class="blackText">black</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <div id="invoice_id">
+                                            <div class="invoices_hearder" id="invoices__color">
+                                                <ul class="list-group list-group-horizontal width-100 btn-shadow mb-2 bg-input text-input">
+                                                    <li class="list-group-item text-center font-weight-bold bg-transparent">Designation</li>
+                                                    <li class="list-group-item text-center font-weight-bold bg-transparent">Quantité</li>
+                                                    <li class="list-group-item text-center font-weight-bold bg-transparent">Prix U.</li>
+                                                    <li class="list-group-item text-center font-weight-bold bg-transparent">Total HT </li>
+                                                </ul>
+                                            </div>
+                                            <div class="invoices_contente">
+                                                <ul id='addr0' class="list-group list-group-horizontal width-100 border-0 shadow-sm mb-3">
+                                                    <li class="list-group-item p-1 h-auto border-0">
+                                                      <textarea class="form-control" name='product[]'  placeholder='Enter Product Name' rows="3"></textarea>
+                                                    </li>
+                                                    <li class="list-group-item p-1 h-auto border-0">
+                                                      <input type="number" name='qty[]' placeholder='Enter Qty' class="form-control h-100 qty" step="0" min="0"/>
+                                                    </li>
+                                                    <li class="list-group-item p-1 h-auto border-0">
+                                                      <input type="number" name='price[]' placeholder='Enter Unit Price' class="form-control h-100 price" step="0.00" min="0"/>
+                                                    </li>
+                                                    <li class="list-group-item p-1 h-auto border-0">
+                                                      <input type="number" name='total[]' placeholder='0.00' class="form-control h-100 total" readonly/>
+                                                    </li>
+                                                </ul>
+                                                <ul id='addr1' class="list-group list-group-horizontal width-100 border-0 shadow-sm mb-3"></ul>
+                                            </div>
+                                        </div>
+                                        
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12 my-3">
+                                        <span id="add_contente" class="btn btn-success text-center p-0 rounded-circle boxx-shadow "><i class='bx bx-plus'></i></span>
+                                        <span id='delete_row' class="btn btn-danger p-0 rounded-circle boxx-shadow "><i class='bx bx-minus'></i></span>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                      <div class="col-md-8">
+                                        <div>
+                                            <div id="invoice_total_id">
+                                                <ul class="list-group btn-shadow">
+                                                    <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                                      Total General HT
+                                                      <span class=""><input type="number" name='sub_total' placeholder='0.00' class="form-control" id="sub_total" readonly/></span>
+                                                    </li>
+                                                    <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                                      <div class="input-group input-group-sm taxtttc">
+                                                        <div class="input-group-prepend">
+                                                          <span class="input-group-text bg-white border-0">TAX:</span>
+                                                        </div>
+                                                        <input type="number" class="form-control" id="tax1" placeholder="0">
+                                                        <div class="input-group-prepend">
+                                                            <span class="input-group-text bg-white border-0">%</span>
+                                                          </div>
+                                                      </div>
+                                                      <span class=""><input type="number" name='tax_amount' id="tax_amount" placeholder='0.00' class="form-control" readonly/></span>
+                                                    </li>
+                                                    <li class="list-group-item border-0 d-flex justify-content-between align-items-center">
+                                                      Total TTC
+                                                      <span class=""><input type="number" name='total_amount' id="total_amount" placeholder='0.00' class="form-control" readonly/></span>
+                                                    </li>
+                                                  </ul>
+                                            </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <div class="text-uppercase">
+                                          <h4 class="py-2 mt-3">Valeur en lettre</h4>
+                                        </div>
+                                        <p class="font-weight-bold" contenteditable>Deux cents trente mille <span>Franc CFAS</span></p>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-md-12">
+                                        <div class="text-uppercase">
+                                          <h4 class="py-4">Informations additionnel (Facultatif)</h4>
+                                        </div>
+                                        <p contenteditable>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nisi eum, modi autem repellendus, sunt necessitatibus voluptate saepe, voluptatibus omnis inventore? Aspernatur facere praesentium voluptatem voluptate et, vero voluptas earum.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="btn-shadow border-r p-md-3 show_invoice h-100">
+                            <div class="row">
+                              <div class="shows">
+                                
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+                      <div class="text-center">
+                        <button type="submit" class="btn border-r btn-shadow px-md-5 font-weight-bold">Ajouter</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer border-0">
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Fermer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!--		FIN DES MODALES -->
+
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+    <script src="https://cdn.bootcss.com/html2pdf.js/0.9.1/html2pdf.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.1/html2pdf.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../../assets/js/index.js"></script>
+    
+
+    <!-- Include the Quill library -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
+
+    <!-- Initialize Quill editor -->
+    <script>
+      var quill = new Quill('#editor', {
+        theme: 'snow'
+      });
+    </script> 
+
+    <script>
+ 
+    </script>
+
+  </body>
+</html>
