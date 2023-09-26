@@ -376,11 +376,23 @@ a{
     box-shadow: 6px -2px 0px 0px #4fa2c3;
   }
 
+  .rowtitle h4{
+    font-size: 10px;
+  }
+
   .content-rad-225{
      margin: 0 10px;
   }
+    
+  .stockhover,
+  .stockhover-active{
+    background-color: #4FA2C2;
+    color: #fff;
+    font-weight: bold;
+  }
 
-  .content-rad-225 p{
+  .content-rad-225 p,
+  .content-rad-225 h4 span{
     width: 45px;
     height: 45px;
     border: 2px solid #4fa2c3;

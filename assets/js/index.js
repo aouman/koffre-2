@@ -57,7 +57,7 @@
   
                       var reader = new FileReader();
                       reader.onload = function (e) {
-                        var html = "<div class='upload__img-box'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
+                        var html = "<div class='upload__img-box mx-1 btn-shadow border-r'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
                         imgWrap.append(html);
                         iterator++;
                       }
@@ -229,6 +229,8 @@
           });
     
     //---FIN JS DE LA PAGE INFO----
+
+
 
     //----COMPTABILITE----
         
@@ -565,6 +567,25 @@ $(document).ready(function() {
 
 });
 
+// BTN HOVER 
+
+$(document).ready(function () {
+  // Call the event handler on #text
+  $(".content-rad-225").hover(function () {
+    /*
+    Hover alows a mouseenter and mouse leave event
+    seperated by a comma
+    */
+    //Event one mouse enter add class
+    $(this).find("a h4 span").addClass("stockhover");
+  },
+    // Event two mouse out remove class               
+    function () {
+      ('span')
+      $(this).find("a h4 span").removeClass("stockhover");
+    });
+});
+
 
 // filter the div element
 
@@ -582,8 +603,6 @@ function filterSearch(){
     }
   }  
 }
-
-
 
 
 
