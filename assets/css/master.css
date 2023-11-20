@@ -51,6 +51,12 @@ a{
   color: #fff!important;
   background-color: #4fa2c3;
 }
+.detailStock li .nav-link.active {
+  color: #4fa2c3;
+   background-color: #ffffff; 
+  border-bottom: solid 3px #4fa2c3!important;
+  border-radius: 0;
+}
 .border-r{
   border-radius: 15px;
 }
@@ -440,6 +446,7 @@ a{
 .elment-menu .dropdown-toggle::after {
   display: block!important;
   margin-left: 0!important;
+  border-top: 0em solid!important ;
 }
 
 .infos-contente{
@@ -559,6 +566,10 @@ p {
 .bg-color-first{
   background-color: #0000004a;
   height: 300px;
+}
+
+.bg-color-first-2{
+  background-color: #0000004a;
 }
 
 .logo-vignette{
@@ -718,7 +729,7 @@ span[contenteditable] { display: inline-block; }
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
@@ -783,4 +794,139 @@ span[contenteditable] { display: inline-block; }
 
 .blackText{
   color:black;
+}
+
+.search-proj23{
+  width: 250px;
+}
+.selecte-proj{
+  width: 25px;
+  height: 25px;
+  background-color: rgb(240, 248, 255);
+  z-index: 999;
+  right: 5px;
+  top: 5px;
+}
+
+.card-bg-project{
+  width: 12rem;
+  height: 8rem;
+  background-color: #4fa2c3;
+  background: url('../../../assets/media/font.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+ 
+ /*popover project*/
+
+#popper-popup {
+  background: #4fa2c3;
+   display: none;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 13px;
+  border-radius: 4px;
+  display: none;
+  width: 100%;
+  max-width: 400px;
+}
+#popper-popup  li {
+  font-size: 16px;
+  font-weight: 300;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#popper-popup li:hover {
+  background: #4fa2c39f;
+  color: #fff;
+ }
+#popper-popup[data-popper-reference-hidden] {
+  visibility: hidden;
+  pointer-events: none;
+}
+#popper-popup[show-popper] {
+  display: block;
+  z-index: 1;
+}
+
+/*keep popper visible in the Divi Builder for editing*/
+#et-fb-app #popper-popup {
+  display: block;
+}
+
+/*build the arrow targeting the divider with class 'popper-arrow'*/
+#popper-arrow,
+#popper-arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #ffffff;
+}
+#popper-arrow {
+  visibility: hidden;
+}
+#popper-arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg);
+}
+
+/*position arrow using popper.js data-popper-placement attribute*/
+#popper-popup[data-popper-placement^="top"] #popper-arrow {
+  bottom: -4px;
+}
+
+#popper-popup[data-popper-placement^="bottom"] #popper-arrow {
+  top: -4px;
+}
+
+#popper-popup[data-popper-placement^="left"] #popper-arrow {
+  right: -4px;
+}
+
+#popper-popup[data-popper-placement^="right"] #popper-arrow {
+  left: -4px;
+}
+
+/*hide arrow when reference outside of viewport*/
+#popper-popup[data-popper-reference-hidden] #popper-arrow::before {
+  visibility: hidden;
+}
+
+.project-boxs{
+  height: 25em;
+  overflow-y: auto;
+}
+
+.taskMaster{
+  width: 26vw;
+  border-radius: 15px;
+  max-width: 27rem;
+  min-width: 21rem;
+}
+
+#extend-field{
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.addTasks25{
+  border: 1px dashed #4fa2c3;
+}
+
+.remove-extend-field{
+  right: 2px;
+  top: 13px;
 }

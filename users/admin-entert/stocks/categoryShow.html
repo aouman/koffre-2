@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../../assets/css/master.css">
+    <link rel="stylesheet" href="../../../assets/css/responsive.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- quill editor -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link href="//cdn.quilljs.com/1.3.6/quill.bubble.css" rel="stylesheet">
+
+    <title>Tableau de bord</title>
+  </head>
+  <body>
+    <section class="main-dash-1 sidebar close">
+      <div class="">
+        <div class="logo-details bg-white">
+          <img src="../../../assets/media/kofre.png" class="img-fluid logo" width="130" alt="logo">
+          <!--span class="logo_name">
+            <a href="#"><img src="../../assets/media/kofre.png" class="img-fluid logo" width="150" alt="logo"></a> 
+          </span-->
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="../index_main.html">
+              <i class='bx bx-tachometer'></i>
+              <span class="link_name">Accueil</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="index_main.html">Accueil</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="../info.html">
+              <i class='bx bx-info-circle'></i>
+              <span class="link_name">informations</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="info.html">informations</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="comptabilite.html" >
+              <i class='bx bxs-bank'></i>
+              <span class="link_name">Comptabilité</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="comptabilite.html">Comptabilité</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="stockHome.html" class="act-show">
+              <i class='bx bx-clipboard'></i>
+              <span class="link_name">Stock</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Stock</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-list-check'></i>
+              <span class="link_name">Mes taches</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Mes taches</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-chat'></i>
+              <span class="link_name">Chat</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Chat</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-calendar'></i>
+              <span class="link_name">Agendas</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Agendas</a></li>
+            </ul>
+          </li>  
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-user-plus'></i>
+              <span class="link_name">Mon équipe</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Mon équipe</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-message-detail'></i>
+              <span class="link_name">Message</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Message</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">
+              <i class='bx bx-credit-card'></i>
+              <span class="link_name">Abonnement</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Abonnement</a></li>
+            </ul>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class='bx bx-cog' ></i>
+              <span class="link_name">Paramètre</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="#">Paramètre</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
+  <!--END MENU-->
+  
+    <section class="home-section">
+      <div class="home-content badge d-flex justify-content-between align-items-center position-sticky">
+        <div class="heard-225 d-flex justify-content-between align-items-center ">
+          <i class='bx bx-menu' ></i>
+          <span class="text d-md-block d-none"> 
+            <p class="mb-0 d-flex justify-content-between align-items-center">
+              <i class='bx bxs-bank pr-3'></i>
+              Gestion des stocks
+            </p>
+          </span>
+        </div>
+        <div class="elment-menu">
+          <ul class="nav justify-content-end">
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2 active" href="#">
+                <i class='bx bx-help-circle h4 mb-0'></i>
+              </a>
+            </li>
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2" href="#">
+                <i class='bx bx-bell h4 mb-0'></i>
+              </a>
+            </li>
+            <li class="nav-item border mr-3 mr-md-5 px-0 rounded-circle btn-shadow">
+              <a class="nav-link px-2 dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                <i class='bx bx-user h4 mb-0'></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+ 
+      <div class="container mb-3">
+        <div class="row pt-4 rowtitle">
+          <ul class="list-group list-group-horizontal flex-wrap mx-auto">
+            <li class="list-group-item p-0 mb-3 border-0"> 
+              <div class="card border-0">
+                <div class="card-body p-1 px-2 border-r  boxx-shadow content-rad-225">
+                  <a href="stockHome.html">
+                    <h4 class="h6 mt-0 badge justify-content-between align-items-center d-flex mb-0"> 
+                      <span class="mr-3 mr-md-1 "><i class='bx bx-package px-3'></i></span> 
+                      Niveau de stock
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item p-0 mb-3 border-0"> 
+              <div class="card border-0">
+                <div class="card-body p-1 px-2 border-r  boxx-shadow content-rad-225">
+                  <a href="entre.html" class="">
+                    <h4 class="h6 mt-0 badge justify-content-between align-items-center d-flex mb-0"> 
+                      <span class="mr-3 mr-md-1 "><i class='bx bx-cloud-download px-3'></i></span> 
+                      Entrée d'article
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item p-0 mb-3 border-0"> 
+              <div class="card border-0">
+                <div class="card-body p-1 px-2  border-r  boxx-shadow content-rad-225">
+                  <a href="sortie.html">
+                    <h4 class="h6 mt-0 badge justify-content-between align-items-center d-flex mb-0"> 
+                      <span class="mr-3 mr-md-1"><i class='bx bx-cloud-upload px-3'></i></span> 
+                      Sortie d'article
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item p-0 mb-3 border-0"> 
+              <div class="card border-0">
+                <div class="card-body p-1 px-2 border-r  boxx-shadow content-rad-225">
+                  <a href="categorieStock.html">
+                    <h4 class="h6 mt-0 badge justify-content-between align-items-center d-flex mb-0"> 
+                      <span class="mr-3 mr-md-1  stockhover-active"><i class='bx bxs-component px-3'></i></span> 
+                      Catégories de stocks
+                    </h4>
+                  </a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <h4 class="font-weight-bold">Catégories : Vêtements</h4>
+        <div class="line-225 border w-50 btn-shadow rounded-pill" ></div>
+        <div class="row mt-4">
+          <ul class="list-group list-group-horizontal flex-wrap">
+            <li class="list-group-item border-0">
+              <select class="form-control btn border-r btn-shadow" id="maxRows">
+                <option value="5000">Tout afficher</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="70">70</option>
+                <option value="100">100</option>
+              </select>
+            </li>
+             
+            <li class="list-group-item border-0">
+              <div class="tb_search">
+                <input type="search" data-table="order-table" placeholder="Filtrer" class="form-control rounded-pill light-table-filter">
+              </div>
+            </li>
+            <li class="list-group-item border-0">
+              <button class="btn btn-success border-r btn-pdf boxx-shadow py-2 font-weight-bold"  onclick="createPDF()"><span><i class='bx bxs-cloud-download'></i></span> Télécharger PDF</button>
+            </li>
+             
+          </ul>
+        </div>
+
+        <div class="row pt-4">
+          <div class="col-md-12">
+             
+            <div class="table-responsive boxx-shadow border-r mb-3" id="">
+              <table class="table table-bordered table-striped mb-0 order-table table-id " id= "element-to-print">
+                <thead>
+                  <tr>
+                    <th scope="col">Articles</th>
+                    <th scope="col">Stocks initials</th>
+                      <th scope="col">Stocks actuel	</th>
+                    <th scope="col">Date d'ajout</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="btn border-0"  > Vetements </th>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                    <td>Mark</td>
+                     <td>
+                      <p class="justify-content-between d-md-flex">
+                        <span class="btn bg-color boxx-shadow text-white" data-toggle="modal" data-target="#stockNedit">
+                          <i class='bx bx-edit'></i>
+                        </span> 
+                        <span class="btn bg-danger boxx-shadow text-white" data-toggle="modal" data-target="#artiDel"><i class='bx bxs-trash'></i></span>
+                      </p> 
+                     </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">15/06/2023</th>
+                    <td>Mark</td>
+                    <td>Lorem ipsum  </td>
+                  
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                 
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                   
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                   
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                 
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                  
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                  <!--		Start Pagination -->
+                  <div class='pagination-container' >
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination justify-content-end">
+                        
+                        <li class="page-item rounded-left page-link" data-page="prev" >
+                          <span> <i class='bx bx-chevron-left'></i> <span class="sr-only">(current)</span></span>
+                        </li>
+                      <!--	Here the JS Function Will Add the Rows -->
+                        <li class="page-item rounded-right page-link" data-page="next" id="prev">
+                          <span> <i class='bx bx-chevron-right'></i> <span class="sr-only">(current)</span></span>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+        
+      </div>
+
+    </section>
+
+    <!-- ADD ARTICLES  MODAL -->
+     
+    <div class="modal fade" id="stockNadd" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="stockNaddLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered  ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stockNaddLabel">Ajouter une Catégorie </h5>
+            <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="btn-shadow rounded-circle py-2 px-3">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <div class="card-body">
+                <form>
+                   
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Catégorie  <span class="text-danger">*</span> </label>
+                    <input type="text" class="form-control" placeholder="Vêtement">
+                  </div>
+                 
+                   <button type="submit" class="btn btn-shadow border-r">Ajouter la Catégorie </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger boxx-shadow" data-dismiss="modal">Fermer</button>
+           </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- EDIT MODAL -->
+     
+    <div class="modal fade" id="stockNedit" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="stockNeditLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="stockNeditLabel">Modifier</h5>
+            <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true" class="btn-shadow rounded-circle py-2 px-3">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Catégorie  <span class="text-danger">*</span> </label>
+                        <input type="text" class="form-control" placeholder="Vêtement">
+                      </div>
+                   <button type="submit" class="btn btn-shadow border-r">Modifier la Catégorie</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-danger boxx-shadow" data-dismiss="modal">Fermer</button>
+           </div>
+        </div>
+      </div>
+    </div>
+ 
+     <!--		Les modales supprimer ARTICLE-->
+
+     <div class="modal fade" id="artiDel" data-backdrop="static" tabindex="-1" aria-labelledby="artiDelLabel" aria-hidden="true">
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title mx-auto text-uppercase" id="artiDelLabel">Supprimer l'article</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <div class="card-body text-center">
+                <h4 class="h6">Voulez-vous définiment supprimer cet article?</h4>
+                <div>
+                  <button class="btn btn-danger boxx-shadow mr-md-2">Oui</button>
+                  <button class="btn btn-info boxx-shadow" data-dismiss="modal">Non</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="../../../assets/js/index.js"></script>
+
+   
+    <!-- Include the Quill library -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script src="//cdn.quilljs.com/1.3.6/quill.min.js"></script>
+
+    <!-- Initialize Quill editor -->
+    <script>
+      var quill = new Quill('#editor', {
+        theme: 'snow'
+      });
+    </script>
+  </body>
+</html>
