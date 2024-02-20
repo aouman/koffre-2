@@ -918,7 +918,14 @@ span[contenteditable] { display: inline-block; }
 
 #extend-field{
   overflow: hidden;
-  overflow-x: auto;
+  overflow: auto;
+  white-space: nowrap;
+ 
+}
+
+.extend-field{
+  overflow: hidden;
+  overflow: auto;
   white-space: nowrap;
 }
 
